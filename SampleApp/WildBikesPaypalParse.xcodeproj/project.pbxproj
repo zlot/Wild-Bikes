@@ -44,6 +44,7 @@
 		C92E2DDE1984080A007CB709 /* RideThisBikeBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DDA1984080A007CB709 /* RideThisBikeBtn@2x.png */; };
 		C92E2DE119840BE9007CB709 /* Helmet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DDF19840BE9007CB709 /* Helmet@2x.png */; };
 		C92E2DE419840D20007CB709 /* Helmet.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DE319840D20007CB709 /* Helmet.png */; };
+		C9337F51198425C600F2E877 /* ReturnedBikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9337F50198425C600F2E877 /* ReturnedBikeViewController.m */; };
 		C936E8E6198422550066DED0 /* RidingModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C936E8E5198422550066DED0 /* RidingModeViewController.m */; };
 		C98D299A1983D59000F24042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D29991983D59000F24042 /* CFNetwork.framework */; };
 		C98D299C1983D5AB00F24042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299B1983D5AB00F24042 /* libz.dylib */; };
@@ -108,6 +109,8 @@
 		C92E2DDA1984080A007CB709 /* RideThisBikeBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RideThisBikeBtn@2x.png"; sourceTree = "<group>"; };
 		C92E2DDF19840BE9007CB709 /* Helmet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Helmet@2x.png"; sourceTree = "<group>"; };
 		C92E2DE319840D20007CB709 /* Helmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Helmet.png; sourceTree = "<group>"; };
+		C9337F4F198425C600F2E877 /* ReturnedBikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnedBikeViewController.h; sourceTree = "<group>"; };
+		C9337F50198425C600F2E877 /* ReturnedBikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnedBikeViewController.m; sourceTree = "<group>"; };
 		C936E8E4198422550066DED0 /* RidingModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RidingModeViewController.h; sourceTree = "<group>"; };
 		C936E8E5198422550066DED0 /* RidingModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RidingModeViewController.m; sourceTree = "<group>"; };
 		C98D29991983D59000F24042 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -235,6 +238,8 @@
 				C9D1A52A1983E37D002512BD /* myAnnotation.m */,
 				C936E8E4198422550066DED0 /* RidingModeViewController.h */,
 				C936E8E5198422550066DED0 /* RidingModeViewController.m */,
+				C9337F4F198425C600F2E877 /* ReturnedBikeViewController.h */,
+				C9337F50198425C600F2E877 /* ReturnedBikeViewController.m */,
 				849BE6F216D4352100E03EEC /* Supporting Files */,
 			);
 			name = WildBikes;
@@ -397,6 +402,7 @@
 			files = (
 				C98D9E251983E33500C8C102 /* BikeDetailViewController.m in Sources */,
 				849BE6F816D4352100E03EEC /* main.m in Sources */,
+				C9337F51198425C600F2E877 /* ReturnedBikeViewController.m in Sources */,
 				849BE6FC16D4352100E03EEC /* AppDelegate.m in Sources */,
 				C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */,
 				C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */,
