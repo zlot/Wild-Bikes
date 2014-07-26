@@ -14,5 +14,9 @@
 @synthesize longitude;
 @synthesize latitude;
 @synthesize isAvailable;
+@synthesize passcode;
+@synthesize originalOwnerName;
+@synthesize bikeDescription;
+@synthesize hasHelmet;
 
 @end

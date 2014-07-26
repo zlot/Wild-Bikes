@@ -153,7 +153,11 @@
                 // Create Bike of Bikes
                 Bicycle *bike = [[Bicycle alloc] init];
                 bike.name = object[@"name"];
+                bike.passcode = object[@"passcode"];
+                bike.originalOwnerName = object[@"originalOwnerName"];
+                bike.bikeDescription = object[@"bikeDescription"];
                 bike.isAvailable = [NSNumber numberWithBool:[object[@"isAvailable"] boolValue]];
+                bike.hasHelmet = [NSNumber numberWithBool:[object[@"hasHelmet"] boolValue]];
                 bike.latitude = [NSNumber numberWithDouble:point.latitude];
                 bike.longitude = [NSNumber numberWithDouble:point.longitude];
                 [bikes addObject:bike];
