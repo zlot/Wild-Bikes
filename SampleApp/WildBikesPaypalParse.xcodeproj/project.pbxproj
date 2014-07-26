@@ -40,11 +40,15 @@
 		C98D299A1983D59000F24042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D29991983D59000F24042 /* CFNetwork.framework */; };
 		C98D299C1983D5AB00F24042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299B1983D5AB00F24042 /* libz.dylib */; };
 		C98D299E1983D5B900F24042 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299D1983D5B900F24042 /* StoreKit.framework */; };
+		C98D9E251983E33500C8C102 /* BikeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D9E241983E33500C8C102 /* BikeDetailViewController.m */; };
+		C9A0C8D71983F7AA00BEEF25 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C8D61983F7AA00BEEF25 /* Entitlements.plist */; };
 		C9AA606D1983D6D9000A48BC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA606C1983D6D9000A48BC /* Social.framework */; };
 		C9AA606F1983D707000A48BC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA606E1983D707000A48BC /* FacebookSDK.framework */; };
 		C9AA60711983D71E000A48BC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60701983D71E000A48BC /* Parse.framework */; };
 		C9AA60731983D74B000A48BC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60721983D74B000A48BC /* Accounts.framework */; };
 		C9CD62861983E0EC0028B08C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
+		C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CD628A1983E1D50028B08C /* MapViewController.m */; };
+		C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D1A52A1983E37D002512BD /* myAnnotation.m */; };
 		D5463464178F5A2800A2D5F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */; };
 		D5709F301884CDBF00CCD3CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -52,14 +56,14 @@
 /* Begin PBXFileReference section */
 		2D48B18416EE8F0800C83CD2 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		2D48B18516EE8F0800C83CD2 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
-		849BE6E816D4352100E03EEC /* WildBikes-Paypal-Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WildBikes-Paypal-Parse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		849BE6E816D4352100E03EEC /* WildBikesPaypalParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildBikesPaypalParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849BE6EB16D4352100E03EEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		849BE6ED16D4352100E03EEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		849BE6EF16D4352100E03EEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		849BE6F316D4352100E03EEC /* WildBikes-Paypal-Parse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WildBikes-Paypal-Parse-Info.plist"; sourceTree = "<group>"; };
+		849BE6F316D4352100E03EEC /* WildBikesPaypalParse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WildBikesPaypalParse-Info.plist"; sourceTree = "<group>"; };
 		849BE6F516D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		849BE6F716D4352100E03EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		849BE6F916D4352100E03EEC /* WildBikes-Paypal-Parse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WildBikes-Paypal-Parse-Prefix.pch"; sourceTree = "<group>"; };
+		849BE6F916D4352100E03EEC /* WildBikesPaypalParse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WildBikesPaypalParse-Prefix.pch"; sourceTree = "<group>"; };
 		849BE6FA16D4352100E03EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		849BE6FB16D4352100E03EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		849BE6FD16D4352100E03EEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -91,12 +95,19 @@
 		C98D29991983D59000F24042 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C98D299B1983D5AB00F24042 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C98D299D1983D5B900F24042 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C98D9E231983E33500C8C102 /* BikeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeDetailViewController.h; sourceTree = "<group>"; };
+		C98D9E241983E33500C8C102 /* BikeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeDetailViewController.m; sourceTree = "<group>"; };
+		C9A0C8D61983F7AA00BEEF25 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		C9AA606C1983D6D9000A48BC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C9AA606E1983D707000A48BC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		C9AA60701983D71E000A48BC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C9AA60721983D74B000A48BC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		C9CD62851983E0EC0028B08C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C9CD62871983E1070028B08C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9CD62891983E1D50028B08C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C9CD628A1983E1D50028B08C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C9D1A5291983E37D002512BD /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
+		C9D1A52A1983E37D002512BD /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
 		D540258117FCC65A001F1164 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = ../PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
 		D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -150,7 +161,7 @@
 		849BE6E916D4352100E03EEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				849BE6E816D4352100E03EEC /* WildBikes-Paypal-Parse.app */,
+				849BE6E816D4352100E03EEC /* WildBikesPaypalParse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,11 +200,17 @@
 		849BE6F116D4352100E03EEC /* WildBikes */ = {
 			isa = PBXGroup;
 			children = (
+				C9CD62891983E1D50028B08C /* MapViewController.h */,
+				C9CD628A1983E1D50028B08C /* MapViewController.m */,
 				849BE6FA16D4352100E03EEC /* AppDelegate.h */,
 				849BE6FB16D4352100E03EEC /* AppDelegate.m */,
 				849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */,
 				849BE70916D4352100E03EEC /* MainViewController.h */,
 				849BE70A16D4352100E03EEC /* MainViewController.m */,
+				C98D9E231983E33500C8C102 /* BikeDetailViewController.h */,
+				C98D9E241983E33500C8C102 /* BikeDetailViewController.m */,
+				C9D1A5291983E37D002512BD /* myAnnotation.h */,
+				C9D1A52A1983E37D002512BD /* myAnnotation.m */,
 				849BE6F216D4352100E03EEC /* Supporting Files */,
 			);
 			name = WildBikes;
@@ -203,10 +220,11 @@
 		849BE6F216D4352100E03EEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				849BE6F316D4352100E03EEC /* WildBikes-Paypal-Parse-Info.plist */,
+				C9A0C8D61983F7AA00BEEF25 /* Entitlements.plist */,
+				849BE6F316D4352100E03EEC /* WildBikesPaypalParse-Info.plist */,
 				849BE6F416D4352100E03EEC /* InfoPlist.strings */,
 				849BE6F716D4352100E03EEC /* main.m */,
-				849BE6F916D4352100E03EEC /* WildBikes-Paypal-Parse-Prefix.pch */,
+				849BE6F916D4352100E03EEC /* WildBikesPaypalParse-Prefix.pch */,
 				849BE6FD16D4352100E03EEC /* Default.png */,
 				849BE6FF16D4352100E03EEC /* Default@2x.png */,
 				849BE70116D4352100E03EEC /* Default-568h@2x.png */,
@@ -245,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		849BE6E716D4352100E03EEC /* WildBikes-Paypal-Parse */ = {
+		849BE6E716D4352100E03EEC /* WildBikesPaypalParse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "WildBikes-Paypal-Parse" */;
+			buildConfigurationList = 849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "WildBikesPaypalParse" */;
 			buildPhases = (
 				849BE6E416D4352100E03EEC /* Sources */,
 				849BE6E516D4352100E03EEC /* Frameworks */,
@@ -257,9 +275,9 @@
 			);
 			dependencies = (
 			);
-			name = "WildBikes-Paypal-Parse";
+			name = WildBikesPaypalParse;
 			productName = "PayPal-iOS-SDK-Sample-App";
-			productReference = 849BE6E816D4352100E03EEC /* WildBikes-Paypal-Parse.app */;
+			productReference = 849BE6E816D4352100E03EEC /* WildBikesPaypalParse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -268,11 +286,12 @@
 		849BE6E016D4352000E03EEC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = ZZ;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = PayPal;
+				ORGANIZATIONNAME = WildBikes;
 				TargetAttributes = {
 					849BE6E716D4352100E03EEC = {
+						DevelopmentTeam = R3F9LF8H5Z;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -281,7 +300,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "WildBikes-Paypal-Parse" */;
+			buildConfigurationList = 849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "WildBikesPaypalParse" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -293,7 +312,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				849BE6E716D4352100E03EEC /* WildBikes-Paypal-Parse */,
+				849BE6E716D4352100E03EEC /* WildBikesPaypalParse */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +326,7 @@
 				849BE6FE16D4352100E03EEC /* Default.png in Resources */,
 				849BE70016D4352100E03EEC /* Default@2x.png in Resources */,
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
+				C9A0C8D71983F7AA00BEEF25 /* Entitlements.plist in Resources */,
 				849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */,
 				849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */,
 				849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */,
@@ -326,8 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98D9E251983E33500C8C102 /* BikeDetailViewController.m in Sources */,
 				849BE6F816D4352100E03EEC /* main.m in Sources */,
 				849BE6FC16D4352100E03EEC /* AppDelegate.m in Sources */,
+				C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */,
+				C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */,
 				849BE70B16D4352100E03EEC /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,14 +438,16 @@
 		849BE71216D4352100E03EEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Prefix.pch";
-				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Info.plist";
+				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikesPaypalParse-Prefix.pch";
+				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/WildBikesPaypalParse-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +457,8 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "WildBikes-Paypal-Parse";
+				PRODUCT_NAME = WildBikesPaypalParse;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -441,14 +467,16 @@
 		849BE71316D4352100E03EEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Prefix.pch";
-				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Info.plist";
+				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikesPaypalParse-Prefix.pch";
+				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/WildBikesPaypalParse-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,7 +486,8 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "WildBikes-Paypal-Parse";
+				PRODUCT_NAME = WildBikesPaypalParse;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -467,7 +496,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "WildBikes-Paypal-Parse" */ = {
+		849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "WildBikesPaypalParse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				849BE70F16D4352100E03EEC /* Debug */,
@@ -476,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "WildBikes-Paypal-Parse" */ = {
+		849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "WildBikesPaypalParse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				849BE71216D4352100E03EEC /* Debug */,
