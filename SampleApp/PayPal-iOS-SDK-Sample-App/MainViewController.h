@@ -8,12 +8,14 @@
 
 #import "PayPalMobile.h"
 
-@interface ZZMainViewController : UIViewController <PayPalPaymentDelegate, UIPopoverControllerDelegate>
+@interface MainViewController : UIViewController <PayPalPaymentDelegate, UIPopoverControllerDelegate>
 
 @property(nonatomic, strong, readwrite) UIPopoverController *flipsidePopoverController;
 
 @property(nonatomic, strong, readwrite) NSString *environment;
 @property(nonatomic, assign, readwrite) BOOL acceptCreditCards;
 @property(nonatomic, strong, readwrite) NSString *resultText;
+
+- (IBAction)logOut:(id)sender;
 
 @end

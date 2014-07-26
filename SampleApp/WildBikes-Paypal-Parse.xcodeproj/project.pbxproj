@@ -14,12 +14,12 @@
 		849BE6F016D4352100E03EEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BE6EF16D4352100E03EEC /* CoreGraphics.framework */; };
 		849BE6F616D4352100E03EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 849BE6F416D4352100E03EEC /* InfoPlist.strings */; };
 		849BE6F816D4352100E03EEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE6F716D4352100E03EEC /* main.m */; };
-		849BE6FC16D4352100E03EEC /* ZZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE6FB16D4352100E03EEC /* ZZAppDelegate.m */; };
+		849BE6FC16D4352100E03EEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE6FB16D4352100E03EEC /* AppDelegate.m */; };
 		849BE6FE16D4352100E03EEC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE6FD16D4352100E03EEC /* Default.png */; };
 		849BE70016D4352100E03EEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE6FF16D4352100E03EEC /* Default@2x.png */; };
 		849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE70116D4352100E03EEC /* Default-568h@2x.png */; };
 		849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */; };
-		849BE70B16D4352100E03EEC /* ZZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE70A16D4352100E03EEC /* ZZMainViewController.m */; };
+		849BE70B16D4352100E03EEC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE70A16D4352100E03EEC /* MainViewController.m */; };
 		849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE72216D43F5E00E03EEC /* ios_sample_icon.png */; };
 		849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE72416D43F7F00E03EEC /* ios_sample_icon@2x.png */; };
 		849BE72A16D4401C00E03EEC /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BE72616D4401C00E03EEC /* libPayPalMobile.a */; };
@@ -44,6 +44,7 @@
 		C9AA606F1983D707000A48BC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA606E1983D707000A48BC /* FacebookSDK.framework */; };
 		C9AA60711983D71E000A48BC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60701983D71E000A48BC /* Parse.framework */; };
 		C9AA60731983D74B000A48BC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60721983D74B000A48BC /* Accounts.framework */; };
+		C9CD62861983E0EC0028B08C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
 		D5463464178F5A2800A2D5F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */; };
 		D5709F301884CDBF00CCD3CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -59,14 +60,14 @@
 		849BE6F516D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		849BE6F716D4352100E03EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		849BE6F916D4352100E03EEC /* WildBikes-Paypal-Parse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WildBikes-Paypal-Parse-Prefix.pch"; sourceTree = "<group>"; };
-		849BE6FA16D4352100E03EEC /* ZZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAppDelegate.h; sourceTree = "<group>"; };
-		849BE6FB16D4352100E03EEC /* ZZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAppDelegate.m; sourceTree = "<group>"; };
+		849BE6FA16D4352100E03EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		849BE6FB16D4352100E03EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		849BE6FD16D4352100E03EEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		849BE6FF16D4352100E03EEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		849BE70116D4352100E03EEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		849BE70416D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		849BE70916D4352100E03EEC /* ZZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZMainViewController.h; sourceTree = "<group>"; };
-		849BE70A16D4352100E03EEC /* ZZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZMainViewController.m; sourceTree = "<group>"; };
+		849BE70916D4352100E03EEC /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		849BE70A16D4352100E03EEC /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		849BE72216D43F5E00E03EEC /* ios_sample_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_sample_icon.png; sourceTree = "<group>"; };
 		849BE72416D43F7F00E03EEC /* ios_sample_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios_sample_icon@2x.png"; sourceTree = "<group>"; };
 		849BE72616D4401C00E03EEC /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPayPalMobile.a; path = ../PayPalMobile/libPayPalMobile.a; sourceTree = "<group>"; };
@@ -94,6 +95,8 @@
 		C9AA606E1983D707000A48BC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		C9AA60701983D71E000A48BC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C9AA60721983D74B000A48BC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C9CD62851983E0EC0028B08C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C9CD62871983E1070028B08C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D540258117FCC65A001F1164 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = ../PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
 		D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -114,6 +117,7 @@
 				C9AA60711983D71E000A48BC /* Parse.framework in Frameworks */,
 				849BE6EC16D4352100E03EEC /* UIKit.framework in Frameworks */,
 				849BE6EE16D4352100E03EEC /* Foundation.framework in Frameworks */,
+				C9CD62861983E0EC0028B08C /* MapKit.framework in Frameworks */,
 				849BE6F016D4352100E03EEC /* CoreGraphics.framework in Frameworks */,
 				849BE72A16D4401C00E03EEC /* libPayPalMobile.a in Frameworks */,
 				849BE74116D440D700E03EEC /* CoreMedia.framework in Frameworks */,
@@ -137,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				849BE72B16D4402000E03EEC /* PayPalMobile */,
-				849BE6F116D4352100E03EEC /* PayPal-iOS-SDK-Sample-App */,
+				849BE6F116D4352100E03EEC /* WildBikes */,
 				849BE6EA16D4352100E03EEC /* Frameworks */,
 				849BE6E916D4352100E03EEC /* Products */,
 			);
@@ -154,6 +158,8 @@
 		849BE6EA16D4352100E03EEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9CD62871983E1070028B08C /* XCTest.framework */,
+				C9CD62851983E0EC0028B08C /* MapKit.framework */,
 				C9AA60721983D74B000A48BC /* Accounts.framework */,
 				C9AA60701983D71E000A48BC /* Parse.framework */,
 				C9AA606E1983D707000A48BC /* FacebookSDK.framework */,
@@ -180,16 +186,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		849BE6F116D4352100E03EEC /* PayPal-iOS-SDK-Sample-App */ = {
+		849BE6F116D4352100E03EEC /* WildBikes */ = {
 			isa = PBXGroup;
 			children = (
-				849BE6FA16D4352100E03EEC /* ZZAppDelegate.h */,
-				849BE6FB16D4352100E03EEC /* ZZAppDelegate.m */,
+				849BE6FA16D4352100E03EEC /* AppDelegate.h */,
+				849BE6FB16D4352100E03EEC /* AppDelegate.m */,
 				849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */,
-				849BE70916D4352100E03EEC /* ZZMainViewController.h */,
-				849BE70A16D4352100E03EEC /* ZZMainViewController.m */,
+				849BE70916D4352100E03EEC /* MainViewController.h */,
+				849BE70A16D4352100E03EEC /* MainViewController.m */,
 				849BE6F216D4352100E03EEC /* Supporting Files */,
 			);
+			name = WildBikes;
 			path = "PayPal-iOS-SDK-Sample-App";
 			sourceTree = "<group>";
 		};
@@ -264,6 +271,15 @@
 				CLASSPREFIX = ZZ;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = PayPal;
+				TargetAttributes = {
+					849BE6E716D4352100E03EEC = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "WildBikes-Paypal-Parse" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -311,8 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				849BE6F816D4352100E03EEC /* main.m in Sources */,
-				849BE6FC16D4352100E03EEC /* ZZAppDelegate.m in Sources */,
-				849BE70B16D4352100E03EEC /* ZZMainViewController.m in Sources */,
+				849BE6FC16D4352100E03EEC /* AppDelegate.m in Sources */,
+				849BE70B16D4352100E03EEC /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +418,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Prefix.pch";
@@ -427,6 +444,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Prefix.pch";
