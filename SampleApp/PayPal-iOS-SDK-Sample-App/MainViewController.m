@@ -46,10 +46,8 @@
     
     
     // PARSE STUFF
-    [self authenticateUser];
+   [self authenticateUser];
     
-    
-
 }
 
 - (void)authenticateUser {
@@ -78,13 +76,13 @@
         [PFFacebookUtils logInWithPermissions:@[@"publish_actions"] block:^(PFUser *user, NSError *error) {
             // link existing PFUser to Facebook account.
             //on successful login, the existing PFUser is updated with the Facebook information. Future logins via Facebook will now log in the user to their existing account.
-            //            if (![PFFacebookUtils isLinkedWithUser:user]) {
-            //                [PFFacebookUtils linkUser:user permissions:nil block:^(BOOL succeeded, NSError *error) {
-            //                    if (succeeded) {
-            //                        NSLog(@"Woohoo, user logged in with Facebook!");
-            //                    }
-            //                }];
-            //            }
+            if (![PFFacebookUtils isLinkedWithUser:user]) {
+                [PFFacebookUtils linkUser:user permissions:nil block:^(BOOL succeeded, NSError *error) {
+                    if (succeeded) {
+                        NSLog(@"Woohoo, user logged in with Facebook!");
+                    }
+                }];
+            }
             
             if (!user) {
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
@@ -97,12 +95,27 @@
             }
         }];
     }
+}
 
+- (void)reauthenticateUser {
+    [PFFacebookUtils reauthorizeUser:[PFUser currentUser]
+              withPublishPermissions:@[@"publish_actions"]
+                            audience:FBSessionDefaultAudienceFriends
+                               block:^(BOOL succeeded, NSError *error) {
+                                   if (succeeded) {
+                                       NSLog(@"Woohoo, user logged in with Facebook!");
+                                   }
+                               }];
 }
 
 - (IBAction)logOut:(id)sender {
+//    bool didUnlink = [PFFacebookUtils unlinkUser:[PFUser currentUser]];
+//    NSLog(didUnlink ? @"Did unlink from fb" : @"Did not unlink from fb");
+//    [self reauthenticateUser];
     [PFUser logOut];
-    [self authenticateUser];
+    
+//    [self authenticateUser];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
