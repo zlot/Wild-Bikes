@@ -6,10 +6,9 @@
 //  All rights reserved.
 //
 
-#import "ZZFlipsideViewController.h"
 #import "PayPalMobile.h"
 
-@interface ZZMainViewController : UIViewController <PayPalPaymentDelegate, PayPalFuturePaymentDelegate, ZZFlipsideViewControllerDelegate, UIPopoverControllerDelegate>
+@interface ZZMainViewController : UIViewController <PayPalPaymentDelegate, UIPopoverControllerDelegate>
 
 @property(nonatomic, strong, readwrite) UIPopoverController *flipsidePopoverController;
 

@@ -123,6 +123,9 @@
   [self presentViewController:paymentViewController animated:YES completion:nil];
 }
 
+
+
+#pragma mark -
 #pragma mark PayPalPaymentDelegate methods
 
 - (void)payPalPaymentViewController:(PayPalPaymentViewController *)paymentViewController didCompletePayment:(PayPalPayment *)completedPayment {
@@ -141,6 +144,9 @@
   [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+
+#pragma mark -
 #pragma mark Proof of payment validation
 
 - (void)sendCompletedPaymentToServer:(PayPalPayment *)completedPayment {
@@ -149,39 +155,9 @@
 }
 
 
-#pragma mark - Authorize Future Payments
 
-- (IBAction)getUserAuthorization:(id)sender {
-  
-  PayPalFuturePaymentViewController *futurePaymentViewController = [[PayPalFuturePaymentViewController alloc] initWithConfiguration:self.payPalConfig delegate:self];
-  [self presentViewController:futurePaymentViewController animated:YES completion:nil];
-}
-
-
-#pragma mark PayPalFuturePaymentDelegate methods
-
-- (void)payPalFuturePaymentViewController:(PayPalFuturePaymentViewController *)futurePaymentViewController didAuthorizeFuturePayment:(NSDictionary *)futurePaymentAuthorization {
-  NSLog(@"PayPal Future Payment Authorization Success!");
-  self.resultText = futurePaymentAuthorization[@"code"];
-  [self showSuccess];
-
-  [self sendAuthorizationToServer:futurePaymentAuthorization];
-  [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)payPalFuturePaymentDidCancel:(PayPalFuturePaymentViewController *)futurePaymentViewController {
-  NSLog(@"PayPal Future Payment Authorization Canceled");
-  self.successView.hidden = YES;
-  [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)sendAuthorizationToServer:(NSDictionary *)authorization {
-  // TODO: Send authorization to server
-  NSLog(@"Here is your authorization:\n\n%@\n\nSend this to your server to complete future payment setup.", authorization);
-}
-
-
-#pragma mark - Helpers
+#pragma mark - 
+#pragma mark Helpers
 
 - (void)showSuccess {
   self.successView.hidden = NO;
@@ -191,42 +167,6 @@
   [UIView setAnimationDelay:2.0];
   self.successView.alpha = 0.0f;
   [UIView commitAnimations];
-}
-
-#pragma mark - Flipside View Controller
-
-- (void)flipsideViewControllerDidFinish:(ZZFlipsideViewController *)controller {
-  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-    [self dismissViewControllerAnimated:YES completion:nil];
-  } else {
-    [self.flipsidePopoverController dismissPopoverAnimated:YES];
-    self.flipsidePopoverController = nil;
-  }
-}
-
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
-  self.flipsidePopoverController = nil;
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  if ([[segue identifier] isEqualToString:@"pushSettings"]) {
-    [[segue destinationViewController] setDelegate:self];
-
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-      UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
-      self.flipsidePopoverController = popoverController;
-      popoverController.delegate = self;
-    }
-  }
-}
-
-- (IBAction)togglePopover:(id)sender {
-  if (self.flipsidePopoverController) {
-    [self.flipsidePopoverController dismissPopoverAnimated:YES];
-    self.flipsidePopoverController = nil;
-  } else {
-    [self performSegueWithIdentifier:@"showAlternate" sender:sender];
-  }
 }
 
 @end
