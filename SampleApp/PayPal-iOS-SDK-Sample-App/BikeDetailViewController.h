@@ -34,4 +34,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *nearButton;
 
+@property (weak, nonatomic) IBOutlet UIImageView *bikeOwnerImage;
+
 @end

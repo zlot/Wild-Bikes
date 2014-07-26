@@ -112,19 +112,30 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fCy-aP-UaG">
-                                        <rect key="frame" x="91" y="110" width="139" height="35"/>
+                                        <rect key="frame" x="91" y="120" width="139" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13725490196078433" green="0.12156862745098039" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.96339006439999997" blue="0.90902316289999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Released into the wild by Hanners on 27 July 2014" textAlignment="center" selectable="NO" id="3kC-L2-iZe" userLabel="Text View - Desc">
-                                <rect key="frame" x="35" y="492" width="251" height="94"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0ti-ZH-nc1">
+                                <rect key="frame" x="105" y="421" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" id="3kC-L2-iZe" userLabel="Text View - Desc">
+                                <rect key="frame" x="35" y="513" width="251" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Released into the wild by Hanners ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="You are 200 metres away! Come closer to ride." textAlignment="center" selectable="NO" id="m4t-hN-OUG" userLabel="Text View - Desc">
@@ -143,7 +154,8 @@
                         <outlet property="bikeDescription" destination="8bA-qR-UWe" id="vbQ-rJ-oBO"/>
                         <outlet property="bikeImage" destination="Lml-SI-0Fd" id="HWb-VB-kQ5"/>
                         <outlet property="bikeName" destination="fou-hx-bH7" id="mvv-Fi-af9"/>
-                        <outlet property="farText" destination="m4t-hN-OUG" id="6ue-0u-BVC"/>
+						<outlet property="farText" destination="m4t-hN-OUG" id="6ue-0u-BVC"/>                        
+						<outlet property="bikeOwnerImage" destination="0ti-ZH-nc1" id="Qjz-vy-zXp"/>
                         <outlet property="helmetImage" destination="fCy-aP-UaG" id="h4T-oB-So4"/>
                         <outlet property="nearButton" destination="sRQ-1n-Rh5" id="kus-fE-p8H"/>
                         <outlet property="releasedText" destination="3kC-L2-iZe" id="5bO-y6-wY6"/>
@@ -321,7 +333,7 @@
                                     <fragment content="TO UNLOCK BIKE">
                                         <attributes>
                                             <color key="NSColor" red="0.85490196080000003" green="0.10980392160000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
                                             <font key="NSOriginalFont" size="18" name="HelveticaNeue-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -367,7 +379,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="You are currently riding">
                                         <attributes>
-                                            <color key="NSColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -399,7 +411,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="This bike belongs in the wild, ">
                                         <attributes>
-                                            <color key="NSColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -413,7 +425,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="don’t forget to return within">
                                         <attributes>
-                                            <color key="NSColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>

@@ -28,6 +28,10 @@
     if([_bike.hasHelmet intValue] == 1) {
         [self.helmetImage setImage:[UIImage imageNamed: @"Helmet.png"]];
     }
+    
+    [self.bikeOwnerImage setImage:[UIImage imageNamed: [myBikeName stringByAppendingString:@".png"]]];
+    
+    [self.bikeOwnerImage setImage:[UIImage imageNamed: [myBikeName stringByAppendingString:@"_Owner.png"]]];
         
     NSString *appendedText = [@"Released into the wild by " stringByAppendingString:_bike.originalOwnerName];
     self.releasedText.text = appendedText;
