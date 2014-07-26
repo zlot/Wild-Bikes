@@ -54,6 +54,10 @@
 		C9AA60731983D74B000A48BC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60721983D74B000A48BC /* Accounts.framework */; };
 		C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CD628A1983E1D50028B08C /* MapViewController.m */; };
 		C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D1A52A1983E37D002512BD /* myAnnotation.m */; };
+		C9E7F17F198423F8008F1E6F /* PixelBike.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F17D198423F8008F1E6F /* PixelBike.png */; };
+		C9E7F180198423F8008F1E6F /* PixelBike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F17E198423F8008F1E6F /* PixelBike@2x.png */; };
+		C9E7F182198424C7008F1E6F /* CancelBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F181198424C7008F1E6F /* CancelBtn@2x.png */; };
+		C9E7F184198424CE008F1E6F /* CancelBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F183198424CE008F1E6F /* CancelBtn.png */; };
 		D5463464178F5A2800A2D5F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */; };
 		D5709F301884CDBF00CCD3CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +122,10 @@
 		C9CD628A1983E1D50028B08C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		C9D1A5291983E37D002512BD /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
 		C9D1A52A1983E37D002512BD /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
+		C9E7F17D198423F8008F1E6F /* PixelBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PixelBike.png; sourceTree = "<group>"; };
+		C9E7F17E198423F8008F1E6F /* PixelBike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PixelBike@2x.png"; sourceTree = "<group>"; };
+		C9E7F181198424C7008F1E6F /* CancelBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CancelBtn@2x.png"; sourceTree = "<group>"; };
+		C9E7F183198424CE008F1E6F /* CancelBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CancelBtn.png; sourceTree = "<group>"; };
 		D540258117FCC65A001F1164 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = ../PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
 		D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -273,6 +281,10 @@
 		C92E2DD6198407FF007CB709 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C9E7F183198424CE008F1E6F /* CancelBtn.png */,
+				C9E7F181198424C7008F1E6F /* CancelBtn@2x.png */,
+				C9E7F17D198423F8008F1E6F /* PixelBike.png */,
+				C9E7F17E198423F8008F1E6F /* PixelBike@2x.png */,
 				C92E2DE319840D20007CB709 /* Helmet.png */,
 				C92E2DDF19840BE9007CB709 /* Helmet@2x.png */,
 				C92E2DD71984080A007CB709 /* BikePhoto.png */,
@@ -354,8 +366,10 @@
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
 				C92E2DDE1984080A007CB709 /* RideThisBikeBtn@2x.png in Resources */,
 				849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */,
+				C9E7F17F198423F8008F1E6F /* PixelBike.png in Resources */,
 				849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */,
 				849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */,
+				C9E7F180198423F8008F1E6F /* PixelBike@2x.png in Resources */,
 				C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */,
 				849BE74E16D443EC00E03EEC /* button_secondary_selected.png in Resources */,
 				849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */,
@@ -363,7 +377,9 @@
 				849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */,
 				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,
 				2D48B18616EE8F0800C83CD2 /* check.png in Resources */,
+				C9E7F184198424CE008F1E6F /* CancelBtn.png in Resources */,
 				2D48B18716EE8F0800C83CD2 /* check@2x.png in Resources */,
+				C9E7F182198424C7008F1E6F /* CancelBtn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
