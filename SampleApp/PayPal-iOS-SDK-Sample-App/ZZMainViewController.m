@@ -1,13 +1,9 @@
-//
-//  ZZMainViewController.m
-//  PayPal-iOS-SDK-Sample-App
-//
-//  Copyright (c) 2014, PayPal
-//  All rights reserved.
-//
-
 #import "ZZMainViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <Parse/Parse.h>
+#import <FacebookSDK/FacebookSDK.h>
+
+
 
 // Set the environment:
 // - For live charges, use PayPalEnvironmentProduction (default).
@@ -28,26 +24,79 @@
 @implementation ZZMainViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  self.title = @"Wild Bikes!";
+    [super viewDidLoad];
+    self.title = @"Wild Bikes!";
 
-  // Set up payPalConfig
-  _payPalConfig = [[PayPalConfiguration alloc] init];
-  _payPalConfig.acceptCreditCards = YES;
-  _payPalConfig.languageOrLocale = @"en";
-  _payPalConfig.merchantName = @"Wild Bikes";
-  _payPalConfig.merchantPrivacyPolicyURL = [NSURL URLWithString:@"https://www.paypal.com/webapps/mpp/ua/privacy-full"];
-  _payPalConfig.merchantUserAgreementURL = [NSURL URLWithString:@"https://www.paypal.com/webapps/mpp/ua/useragreement-full"];
-  
-  // Setting the languageOrLocale property is optional.
-  _payPalConfig.languageOrLocale = [NSLocale preferredLanguages][0];
+    // Set up payPalConfig
+    _payPalConfig = [[PayPalConfiguration alloc] init];
+    _payPalConfig.acceptCreditCards = YES;
+    _payPalConfig.languageOrLocale = @"en";
+    _payPalConfig.merchantName = @"Wild Bikes";
+    _payPalConfig.merchantPrivacyPolicyURL = [NSURL URLWithString:@"https://www.paypal.com/webapps/mpp/ua/privacy-full"];
+    _payPalConfig.merchantUserAgreementURL = [NSURL URLWithString:@"https://www.paypal.com/webapps/mpp/ua/useragreement-full"];
 
-  // Do any additional setup after loading the view, typically from a nib.
-  self.successView.hidden = YES;
-  
-  // use default environment, should be Production in real life
-  self.environment = kPayPalEnvironment;
+    // Setting the languageOrLocale property is optional.
+    _payPalConfig.languageOrLocale = [NSLocale preferredLanguages][0];
 
+    // Do any additional setup after loading the view, typically from a nib.
+    self.successView.hidden = YES;
+
+    // use default environment, should be Production in real life
+    self.environment = kPayPalEnvironment;
+    
+    
+    // PARSE STUFF
+    PFUser *currentUser = [PFUser currentUser];
+    
+    if (currentUser.username) {
+        // can use this session token to get info out of core database?
+        NSLog(@"currentUser.sessionToken: %@",currentUser.sessionToken);
+        
+        // how to create e.g. a post specific to a user, and retreive all their posts:
+        /*
+         // Make a new post
+         PFObject *post = [PFObject objectWithClassName:@"Post"];
+         post[@"title"] = @"My New Post";
+         post[@"body"] = @"This is some great content.";
+         post[@"user"] = user;
+         [post save];
+         
+         // Find all posts by the current user
+         PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+         [query whereKey:@"user" equalTo:user];
+         NSArray *usersPosts = [query findObjects];
+         */
+        
+    } else {
+        [PFFacebookUtils logInWithPermissions:@[@"email"] block:^(PFUser *user, NSError *error) {
+            // link existing PFUser to Facebook account.
+            //on successful login, the existing PFUser is updated with the Facebook information. Future logins via Facebook will now log in the user to their existing account.
+            if (![PFFacebookUtils isLinkedWithUser:user]) {
+                [PFFacebookUtils linkUser:user permissions:nil block:^(BOOL succeeded, NSError *error) {
+                    if (succeeded) {
+                        NSLog(@"Woohoo, user logged in with Facebook!");
+                    }
+                }];
+            }
+            
+            if (!user) {
+                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+            } else if (user.isNew) {
+                NSLog(@"User signed up and logged in through Facebook!");
+            } else {
+                // succeeded!
+                NSLog(@"User logged in through Facebook!");
+                NSLog(@"currentUser.sessionToken: %@",currentUser.sessionToken);
+            }
+        }];
+    }
+    
+    
+
+}
+
+- (void)logOut {
+    [PFUser logOut];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
