@@ -10,4 +10,10 @@
 
 @implementation BikeDetailViewController
 
+- (void)viewDidLoad
+{
+    self.uiNavigationItem.title = @"Dragon";
+}
+
+
 @end

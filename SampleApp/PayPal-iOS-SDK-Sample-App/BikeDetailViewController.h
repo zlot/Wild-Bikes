@@ -10,4 +10,16 @@
 
 @interface BikeDetailViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UINavigationItem *uiNavigationItem;
+
+@property (weak, nonatomic) IBOutlet UIImageView *bikeImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *bikeName;
+
+@property (weak, nonatomic) IBOutlet UITextView *bikeDescription;
+
+@property (weak, nonatomic) IBOutlet UIImageView *helmetImage;
+
+@property (weak, nonatomic) IBOutlet UITextView *releasedText;
+
 @end
