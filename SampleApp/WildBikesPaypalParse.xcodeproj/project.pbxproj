@@ -73,6 +73,8 @@
 		C9E7F182198424C7008F1E6F /* CancelBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F181198424C7008F1E6F /* CancelBtn@2x.png */; };
 		C9E7F184198424CE008F1E6F /* CancelBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F183198424CE008F1E6F /* CancelBtn.png */; };
 		C9F1C597198450B100DA2F4A /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F1C596198450B100DA2F4A /* ThankYouViewController.m */; };
+		C9F1C59B1984544900DA2F4A /* Black Rider.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5991984544900DA2F4A /* Black Rider.png */; };
+		C9F1C59C1984544900DA2F4A /* Black Rider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C59A1984544900DA2F4A /* Black Rider@2x.png */; };
 		D5463464178F5A2800A2D5F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */; };
 		D5709F301884CDBF00CCD3CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -160,6 +162,8 @@
 		C9E7F183198424CE008F1E6F /* CancelBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CancelBtn.png; sourceTree = "<group>"; };
 		C9F1C595198450B100DA2F4A /* ThankYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThankYouViewController.h; sourceTree = "<group>"; };
 		C9F1C596198450B100DA2F4A /* ThankYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThankYouViewController.m; sourceTree = "<group>"; };
+		C9F1C5991984544900DA2F4A /* Black Rider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Rider.png"; sourceTree = "<group>"; };
+		C9F1C59A1984544900DA2F4A /* Black Rider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Rider@2x.png"; sourceTree = "<group>"; };
 		D540258117FCC65A001F1164 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = ../PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
 		D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -323,6 +327,9 @@
 		C92E2DD6198407FF007CB709 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C9F1C598198453FB00DA2F4A /* bikeImages */,
+				C92E2DD71984080A007CB709 /* BikePhoto.png */,
+				C92E2DD81984080A007CB709 /* BikePhoto@2x.png */,
 				AECF937A1984495800A1B12D /* BikeMini-13.png */,
 				AECF937B1984495800A1B12D /* BikeMini-12.png */,
 				C928124B19843EBF00BA09F6 /* BackToHomeBtn@2x.png */,
@@ -340,12 +347,19 @@
 				C9E7F17E198423F8008F1E6F /* PixelBike@2x.png */,
 				C92E2DE319840D20007CB709 /* Helmet.png */,
 				C92E2DDF19840BE9007CB709 /* Helmet@2x.png */,
-				C92E2DD71984080A007CB709 /* BikePhoto.png */,
-				C92E2DD81984080A007CB709 /* BikePhoto@2x.png */,
 				C92E2DD91984080A007CB709 /* RideThisBikeBtn.png */,
 				C92E2DDA1984080A007CB709 /* RideThisBikeBtn@2x.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		C9F1C598198453FB00DA2F4A /* bikeImages */ = {
+			isa = PBXGroup;
+			children = (
+				C9F1C5991984544900DA2F4A /* Black Rider.png */,
+				C9F1C59A1984544900DA2F4A /* Black Rider@2x.png */,
+			);
+			name = bikeImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,11 +424,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F1C59B1984544900DA2F4A /* Black Rider.png in Resources */,
 				C92E2DE119840BE9007CB709 /* Helmet@2x.png in Resources */,
 				AECF93721984331300A1B12D /* BikeMini-11.png in Resources */,
 				C9DE7C6D1984330E00DABCDE /* Collect@2x.png in Resources */,
 				C92E2DE419840D20007CB709 /* Helmet.png in Resources */,
 				849BE6F616D4352100E03EEC /* InfoPlist.strings in Resources */,
+				C9F1C59C1984544900DA2F4A /* Black Rider@2x.png in Resources */,
 				C92E2DDD1984080A007CB709 /* RideThisBikeBtn.png in Resources */,
 				849BE6FE16D4352100E03EEC /* Default.png in Resources */,
 				849BE70016D4352100E03EEC /* Default@2x.png in Resources */,
