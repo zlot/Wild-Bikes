@@ -174,7 +174,7 @@
 //    [self reauthenticateUser];
     [PFUser logOut];
     
-//    [self authenticateUser];
+    [self authenticateUser];
     
 }
 
