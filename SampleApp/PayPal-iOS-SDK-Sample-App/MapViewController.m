@@ -74,10 +74,13 @@
     
     MyAnnotation *ann = (MyAnnotation *) annotation;
     Bicycle *bike = ann.bike;
+    
+    MKAnnotationView * annotationView;
+    
     if ([bike.isAvailable boolValue] == NO) {
         
-        static NSString *identifier = @"myAnnotation";
-        MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        static NSString *identifier = @"myAnnotation-inUse";
+        annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
         if (!annotationView)
         {
             annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
@@ -92,8 +95,8 @@
             
     } else {
         
-        static NSString *identifier = @"myAnnotation";
-        MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        static NSString *identifier = @"myAnnotation-available";
+        annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
         if (!annotationView)
         {
             annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
