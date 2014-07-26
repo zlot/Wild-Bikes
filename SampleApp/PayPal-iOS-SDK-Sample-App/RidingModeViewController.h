@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RidingModeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *bikeName;
 
 @end
