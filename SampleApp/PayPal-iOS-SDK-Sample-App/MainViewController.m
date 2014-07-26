@@ -1,4 +1,4 @@
-#import "ZZMainViewController.h"
+#import "MainViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
@@ -11,7 +11,7 @@
 // - For testing, use PayPalEnvironmentNoNetwork.
 #define kPayPalEnvironment PayPalEnvironmentSandbox
 
-@interface ZZMainViewController ()
+@interface MainViewController ()
 
 @property(nonatomic, strong, readwrite) IBOutlet UIButton *payNowButton;
 @property(nonatomic, strong, readwrite) IBOutlet UIButton *payFutureButton;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ZZMainViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -189,4 +189,6 @@
   [UIView commitAnimations];
 }
 
+- (IBAction)logOut:(id)sender {
+}
 @end

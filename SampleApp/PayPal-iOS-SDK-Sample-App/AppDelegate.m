@@ -6,11 +6,11 @@
 //  All rights reserved.
 //
 
-#import "ZZAppDelegate.h"
+#import "AppDelegate.h"
 #import "PayPalMobile.h"
 #import <Parse/Parse.h>
 
-@implementation ZZAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
