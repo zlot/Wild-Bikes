@@ -29,37 +29,24 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.title = @"PayPal SDK Demo";
+  self.title = @"Wild Bikes!";
 
   // Set up payPalConfig
   _payPalConfig = [[PayPalConfiguration alloc] init];
   _payPalConfig.acceptCreditCards = YES;
   _payPalConfig.languageOrLocale = @"en";
-  _payPalConfig.merchantName = @"Awesome Shirts, Inc.";
+  _payPalConfig.merchantName = @"Wild Bikes";
   _payPalConfig.merchantPrivacyPolicyURL = [NSURL URLWithString:@"https://www.paypal.com/webapps/mpp/ua/privacy-full"];
   _payPalConfig.merchantUserAgreementURL = [NSURL URLWithString:@"https://www.paypal.com/webapps/mpp/ua/useragreement-full"];
   
   // Setting the languageOrLocale property is optional.
-  //
-  // If you do not set languageOrLocale, then the PayPalPaymentViewController will present
-  // its user interface according to the device's current language setting.
-  //
-  // Setting languageOrLocale to a particular language (e.g., @"es" for Spanish) or
-  // locale (e.g., @"es_MX" for Mexican Spanish) forces the PayPalPaymentViewController
-  // to use that language/locale.
-  //
-  // For full details, including a list of available languages and locales, see PayPalPaymentViewController.h.
-  
   _payPalConfig.languageOrLocale = [NSLocale preferredLanguages][0];
 
   // Do any additional setup after loading the view, typically from a nib.
-
   self.successView.hidden = YES;
   
   // use default environment, should be Production in real life
   self.environment = kPayPalEnvironment;
-
-  NSLog(@"PayPal iOS SDK version: %@", [PayPalMobile libraryVersion]);
 
 }
 
@@ -76,36 +63,20 @@
   // Remove our last completed payment, just for demo purposes.
   self.resultText = nil;
   
-  // Note: For purposes of illustration, this example shows a payment that includes
-  //       both payment details (subtotal, shipping, tax) and multiple items.
-  //       You would only specify these if appropriate to your situation.
-  //       Otherwise, you can leave payment.items and/or payment.paymentDetails nil,
-  //       and simply set payment.amount to your total charge.
-  
   // Optional: include multiple items
-  PayPalItem *item1 = [PayPalItem itemWithName:@"Old jeans with holes"
-                                  withQuantity:2
+  PayPalItem *item1 = [PayPalItem itemWithName:@"Donation to Charity"
+                                  withQuantity:1
                                      withPrice:[NSDecimalNumber decimalNumberWithString:@"0.01"]
                                   withCurrency:@"AUD"
-                                       withSku:@"Hip-00037"];
+                                       withSku:@"WILD-001"];
   NSArray *items = @[item1];
-  NSDecimalNumber *subtotal = [PayPalItem totalPriceForItems:items];
-  
-  // Optional: include payment details
-  NSDecimalNumber *shipping = [[NSDecimalNumber alloc] initWithString:@"0.00"];
-  NSDecimalNumber *tax = [[NSDecimalNumber alloc] initWithString:@"0.00"];
-  PayPalPaymentDetails *paymentDetails = [PayPalPaymentDetails paymentDetailsWithSubtotal:subtotal
-                                                                             withShipping:shipping
-                                                                                  withTax:tax];
-
-  NSDecimalNumber *total = [[subtotal decimalNumberByAdding:shipping] decimalNumberByAdding:tax];
-  
+  //NSDecimalNumber *subtotal = [PayPalItem totalPriceForItems:items]; //NSDecimalNumber *total = [[subtotal decimalNumberByAdding:shipping] decimalNumberByAdding:tax];
   PayPalPayment *payment = [[PayPalPayment alloc] init];
-  payment.amount = total;
+  payment.amount = [PayPalItem totalPriceForItems:items];
   payment.currencyCode = @"AUD";
   payment.shortDescription = @"Charity Donation";
   payment.items = items;  // if not including multiple items, then leave payment.items as nil
-  payment.paymentDetails = paymentDetails; // if not including payment details, then leave payment.paymentDetails as nil
+  payment.paymentDetails = nil; // if not including payment details, then leave payment.paymentDetails as nil
 
   if (!payment.processable) {
     // This particular payment will always be processable. If, for
