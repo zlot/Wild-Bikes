@@ -4,11 +4,9 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 
-
 // Set the environment:
 // - For live charges, use PayPalEnvironmentProduction (default).
 // - To use the PayPal sandbox, use PayPalEnvironmentSandbox.
-// - For testing, use PayPalEnvironmentNoNetwork.
 #define kPayPalEnvironment PayPalEnvironmentSandbox
 
 @interface MainViewController ()
@@ -46,7 +44,84 @@
     
     
     // PARSE STUFF
-   [self authenticateUser];
+//   [self authenticateUser];
+    
+    // how to create e.g. a post specific to a user, and retreive all their posts:
+    // Make a new object
+    PFObject *bicycle = [PFObject objectWithClassName:@"Bicycle"];
+    
+    NSString *name;
+    NSNumber *isAvailable;
+
+    PFGeoPoint *point;
+    
+    // Make a new object
+    name = @"Speedster";
+    point = [PFGeoPoint geoPointWithLatitude:-33.877212 longitude:151.213796];
+    isAvailable = @1;
+    bicycle[@"name"] = name;
+    bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"location"] = point;
+    [bicycle save];
+    
+    bicycle = [PFObject objectWithClassName:@"Bicycle"];
+    name = @"Sally";
+    point = [PFGeoPoint geoPointWithLatitude:-33.878610 longitude:151.215856];
+    isAvailable = @1;
+    bicycle[@"name"] = name;
+    bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"location"] = point;
+    [bicycle save];
+    
+    bicycle = [PFObject objectWithClassName:@"Bicycle"];
+    name = @"Pikachu";
+    point = [PFGeoPoint geoPointWithLatitude:-33.877255 longitude:151.216540];
+    isAvailable = @0;
+    bicycle[@"name"] = name;
+    bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"location"] = point;
+    [bicycle save];
+    
+    bicycle = [PFObject objectWithClassName:@"Bicycle"];
+    name = @"Dragon";
+    point = [PFGeoPoint geoPointWithLatitude:-33.877477 longitude:151.215682];
+    isAvailable = @1;
+    bicycle[@"name"] = name;
+    bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"location"] = point;
+    [bicycle save];
+    
+    bicycle = [PFObject objectWithClassName:@"Bicycle"];
+    name = @"Black Rider";
+    point = [PFGeoPoint geoPointWithLatitude:-33.875313 longitude:151.215145];
+    isAvailable = @1;
+    bicycle[@"name"] = name;
+    bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"location"] = point;
+    [bicycle save];
+     
+     // Find all posts by the current user
+//     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+//     [query whereKey:@"title" equalTo:@"My New Post"];
+//     NSArray *usersPosts = [query findObjects];
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Bicycle"];
+    
+//    [query whereKey:@"playerName" equalTo:@"Dan Stemkoski"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded. The first 100 objects are available in objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object[@"name"]);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+
     
 }
 
@@ -56,21 +131,6 @@
     if (currentUser.username != nil) {
         // can use this session token to get info out of core database?
         NSLog(@"currentUser.sessionToken: %@",currentUser.sessionToken);
-        
-        // how to create e.g. a post specific to a user, and retreive all their posts:
-        /*
-         // Make a new post
-         PFObject *post = [PFObject objectWithClassName:@"Post"];
-         post[@"title"] = @"My New Post";
-         post[@"body"] = @"This is some great content.";
-         post[@"user"] = user;
-         [post save];
-         
-         // Find all posts by the current user
-         PFQuery *query = [PFQuery queryWithClassName:@"Post"];
-         [query whereKey:@"user" equalTo:user];
-         NSArray *usersPosts = [query findObjects];
-         */
         
     } else {
         [PFFacebookUtils logInWithPermissions:@[@"publish_actions"] block:^(PFUser *user, NSError *error) {
