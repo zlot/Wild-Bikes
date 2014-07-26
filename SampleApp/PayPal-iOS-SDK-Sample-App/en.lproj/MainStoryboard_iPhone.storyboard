@@ -76,7 +76,6 @@
                                     <segue destination="kkP-Gm-vfq" kind="push" id="qck-tz-G7O"/>
                                 </connections>
                             </button>
->>>>>>> integrate-map
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

@@ -62,11 +62,7 @@
 		849BE6F316D4352100E03EEC /* WildBikesPaypalParse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WildBikesPaypalParse-Info.plist"; sourceTree = "<group>"; };
 		849BE6F516D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		849BE6F716D4352100E03EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-<<<<<<< HEAD:SampleApp/WildBikes-Paypal-Parse.xcodeproj/project.pbxproj
-		849BE6F916D4352100E03EEC /* WildBikes-Paypal-Parse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WildBikes-Paypal-Parse-Prefix.pch"; sourceTree = "<group>"; };
-=======
 		849BE6F916D4352100E03EEC /* WildBikesPaypalParse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WildBikesPaypalParse-Prefix.pch"; sourceTree = "<group>"; };
->>>>>>> integrate-map:SampleApp/WildBikesPaypalParse.xcodeproj/project.pbxproj
 		849BE6FA16D4352100E03EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		849BE6FB16D4352100E03EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		849BE6FD16D4352100E03EEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -202,23 +198,17 @@
 		849BE6F116D4352100E03EEC /* WildBikes */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD:SampleApp/WildBikes-Paypal-Parse.xcodeproj/project.pbxproj
-=======
 				C9CD62891983E1D50028B08C /* MapViewController.h */,
 				C9CD628A1983E1D50028B08C /* MapViewController.m */,
->>>>>>> integrate-map:SampleApp/WildBikesPaypalParse.xcodeproj/project.pbxproj
 				849BE6FA16D4352100E03EEC /* AppDelegate.h */,
 				849BE6FB16D4352100E03EEC /* AppDelegate.m */,
 				849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */,
 				849BE70916D4352100E03EEC /* MainViewController.h */,
 				849BE70A16D4352100E03EEC /* MainViewController.m */,
-<<<<<<< HEAD:SampleApp/WildBikes-Paypal-Parse.xcodeproj/project.pbxproj
-=======
 				C98D9E231983E33500C8C102 /* BikeDetailViewController.h */,
 				C98D9E241983E33500C8C102 /* BikeDetailViewController.m */,
 				C9D1A5291983E37D002512BD /* myAnnotation.h */,
 				C9D1A52A1983E37D002512BD /* myAnnotation.m */,
->>>>>>> integrate-map:SampleApp/WildBikesPaypalParse.xcodeproj/project.pbxproj
 				849BE6F216D4352100E03EEC /* Supporting Files */,
 			);
 			name = WildBikes;
@@ -355,11 +345,8 @@
 				C98D9E251983E33500C8C102 /* BikeDetailViewController.m in Sources */,
 				849BE6F816D4352100E03EEC /* main.m in Sources */,
 				849BE6FC16D4352100E03EEC /* AppDelegate.m in Sources */,
-<<<<<<< HEAD:SampleApp/WildBikes-Paypal-Parse.xcodeproj/project.pbxproj
-=======
 				C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */,
 				C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */,
->>>>>>> integrate-map:SampleApp/WildBikesPaypalParse.xcodeproj/project.pbxproj
 				849BE70B16D4352100E03EEC /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

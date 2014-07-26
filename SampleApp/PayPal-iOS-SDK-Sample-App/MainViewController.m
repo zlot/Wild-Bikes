@@ -195,6 +195,5 @@
   [UIView commitAnimations];
 }
 
-- (IBAction)logOut:(id)sender {
-}
+
 @end
