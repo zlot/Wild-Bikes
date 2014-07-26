@@ -24,10 +24,16 @@
     // set bike name
     NSString *myBikeName = _bike.name;
     self.bikeName.text = myBikeName;
+    
+    // DISABLE BACK
+    // set the left bar button to a nice trash can
+    self.navigationItem.leftBarButtonItem.title = @"";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                                                          target:self
+                                                                                          action:nil];
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
+    
 }
-
-
-
 
 - (void)didReceiveMemoryWarning
 {

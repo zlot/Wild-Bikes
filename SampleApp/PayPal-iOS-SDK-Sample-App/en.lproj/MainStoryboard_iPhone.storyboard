@@ -154,8 +154,8 @@
                         <outlet property="bikeDescription" destination="8bA-qR-UWe" id="vbQ-rJ-oBO"/>
                         <outlet property="bikeImage" destination="Lml-SI-0Fd" id="HWb-VB-kQ5"/>
                         <outlet property="bikeName" destination="fou-hx-bH7" id="mvv-Fi-af9"/>
-						<outlet property="farText" destination="m4t-hN-OUG" id="6ue-0u-BVC"/>                        
-						<outlet property="bikeOwnerImage" destination="0ti-ZH-nc1" id="Qjz-vy-zXp"/>
+                        <outlet property="bikeOwnerImage" destination="0ti-ZH-nc1" id="Qjz-vy-zXp"/>
+                        <outlet property="farText" destination="m4t-hN-OUG" id="6ue-0u-BVC"/>
                         <outlet property="helmetImage" destination="fCy-aP-UaG" id="h4T-oB-So4"/>
                         <outlet property="nearButton" destination="sRQ-1n-Rh5" id="kus-fE-p8H"/>
                         <outlet property="releasedText" destination="3kC-L2-iZe" id="5bO-y6-wY6"/>

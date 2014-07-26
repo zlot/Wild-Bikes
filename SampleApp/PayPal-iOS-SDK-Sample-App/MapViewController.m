@@ -154,9 +154,6 @@
     //reset bikes
     bikes = [[NSMutableArray alloc] init];
     
-    // remove all annotations (for now)
-    [self.mapView removeAnnotations:[self.mapView annotations]];
-    
     PFQuery *query = [PFQuery queryWithClassName:@"Bicycle2"];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -181,17 +178,10 @@
                 bike.latitude = [NSNumber numberWithDouble:point.latitude];
                 bike.longitude = [NSNumber numberWithDouble:point.longitude];
                 [bikes addObject:bike];
-                
-                // Create Annotation - Title Text
-                NSString *text = @"In Use";
-                if ([object[@"isAvailable"] boolValue] == YES) {
-                    text = @"Available";
-                }
-                // Create Annotation
-                MyAnnotation *annotation;
-                annotation = [[MyAnnotation alloc] initWithCoordinate:coordinate title:text bike:bike];
-                [self.mapView addAnnotation:annotation];
             }
+            
+            [self updateAnnotationsFromBikes];
+            
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -201,4 +191,24 @@
     }];
 }
 
+- (void) updateAnnotationsFromBikes
+{
+    
+    // remove all annotations (for now)
+    [self.mapView removeAnnotations:[self.mapView annotations]];
+    
+    // Fill Annotations
+    for (Bicycle *bike in bikes) {
+        
+        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([bike.latitude doubleValue], [bike.longitude doubleValue]);
+        NSString *text = @"In Use";
+        if ([bike.isAvailable boolValue] == YES) {
+            text = @"Available";
+        }
+        // Create Annotation
+        MyAnnotation *annotation;
+        annotation = [[MyAnnotation alloc] initWithCoordinate:coordinate title:text bike:bike];
+        [self.mapView addAnnotation:annotation];
+    }
+}
 @end

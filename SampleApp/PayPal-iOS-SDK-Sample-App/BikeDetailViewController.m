@@ -42,7 +42,7 @@
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [locationManager startUpdatingLocation];
-
+    
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -73,6 +73,7 @@
         NSLog(@"%@", text);
         
         // FAR MODE
+        [_farText setText:text];
         [_farText setAlpha:1];
         [_nearButton setAlpha:0];
         [_nearButton setUserInteractionEnabled:NO];
