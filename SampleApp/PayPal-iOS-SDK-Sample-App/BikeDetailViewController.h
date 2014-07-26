@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import <CoreLocation/CoreLocation.h>
+
 #import "Bicycle.h"
 
-@interface BikeDetailViewController : UIViewController
+@interface BikeDetailViewController : UIViewController <CLLocationManagerDelegate> {
+    CLLocationManager *locationManager;
+}
 
 @property (nonatomic, retain) Bicycle *bike;
 
