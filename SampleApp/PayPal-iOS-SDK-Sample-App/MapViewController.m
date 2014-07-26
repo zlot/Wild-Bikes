@@ -12,6 +12,8 @@
 
 #import "myAnnotation.h"
 
+#import "BikeDetailViewController.h"
+
 #define METERS_PER_MILE 1609.344
 
 @interface MapViewController ()
@@ -23,7 +25,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
     // MAP
     // Set the mapView delegate to this View Controller
@@ -84,10 +85,25 @@
 
 // Delegate method - handle annotation tap
 - (void) mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    NSLog(@"calloutAccessoryControlTapped: annotation = %@", view.annotation);
-    [self performSegueWithIdentifier:@"MapToBikeSegue" sender:self];
+//    NSLog(@"calloutAccessoryControlTapped: annotation = %@", view.annotation);
+        [self performSegueWithIdentifier:@"MapToBikeSegue" sender:view]; // Note - sending view rather than self - in order to gain access to annotation
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(MKAnnotationView *)sender
+{
+    if ([segue.identifier isEqualToString:@"MapToBikeSegue"])
+    {
+        BikeDetailViewController *destinationViewController = segue.destinationViewController;
+        
+        myAnnotation *annotation = (myAnnotation *) sender.annotation;
+        
+        destinationViewController.uiNavigationItem.title = [annotation title];
+        
+        
+    } else {
+        NSLog(@"PFS:something else");
+    }
+}
 
 - (void) updateAllAnnotations
 {

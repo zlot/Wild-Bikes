@@ -12,7 +12,7 @@
 
 - (void)viewDidLoad
 {
-    self.uiNavigationItem.title = @"Dragon";
+//    self.uiNavigationItem.title = @"Dragon";
 }
 
 
