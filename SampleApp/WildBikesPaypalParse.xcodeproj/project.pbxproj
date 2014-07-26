@@ -81,6 +81,7 @@
 		C9F1C5A419845A7200DA2F4A /* Lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5A219845A7200DA2F4A /* Lock@2x.png */; };
 		C9F1C5A719845C6800DA2F4A /* Black Rider_Owner.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5A519845C6800DA2F4A /* Black Rider_Owner.png */; };
 		C9F1C5A819845C6800DA2F4A /* Black Rider__Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5A619845C6800DA2F4A /* Black Rider__Owner@2x.png */; };
+		C9F1C5AB19845F5800DA2F4A /* PayDepositViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F1C5AA19845F5800DA2F4A /* PayDepositViewController.m */; };
 		D5463464178F5A2800A2D5F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */; };
 		D5709F301884CDBF00CCD3CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -176,6 +177,8 @@
 		C9F1C5A219845A7200DA2F4A /* Lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lock@2x.png"; sourceTree = "<group>"; };
 		C9F1C5A519845C6800DA2F4A /* Black Rider_Owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Rider_Owner.png"; sourceTree = "<group>"; };
 		C9F1C5A619845C6800DA2F4A /* Black Rider__Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Rider__Owner@2x.png"; sourceTree = "<group>"; };
+		C9F1C5A919845F4900DA2F4A /* PayDepositViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayDepositViewController.h; sourceTree = "<group>"; };
+		C9F1C5AA19845F5800DA2F4A /* PayDepositViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayDepositViewController.m; sourceTree = "<group>"; };
 		D540258117FCC65A001F1164 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = ../PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
 		D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -285,6 +288,8 @@
 				C936E8E4198422550066DED0 /* RidingModeViewController.h */,
 				C936E8E5198422550066DED0 /* RidingModeViewController.m */,
 				C9337F4F198425C600F2E877 /* ReturnedBikeViewController.h */,
+				C9F1C5A919845F4900DA2F4A /* PayDepositViewController.h */,
+				C9F1C5AA19845F5800DA2F4A /* PayDepositViewController.m */,
 				C9337F50198425C600F2E877 /* ReturnedBikeViewController.m */,
 				849BE6F216D4352100E03EEC /* Supporting Files */,
 				C9F1C595198450B100DA2F4A /* ThankYouViewController.h */,
@@ -504,6 +509,7 @@
 				849BE70B16D4352100E03EEC /* MainViewController.m in Sources */,
 				C936E8E6198422550066DED0 /* RidingModeViewController.m in Sources */,
 				AECF937519843D2E00A1B12D /* Bicycle.m in Sources */,
+				C9F1C5AB19845F5800DA2F4A /* PayDepositViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

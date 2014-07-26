@@ -88,7 +88,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o04-yc-gz8" kind="push" identifier="BikeToRiding" id="Xfk-LW-kO6"/>
+                                    <segue destination="Qgq-nh-dmJ" kind="push" identifier="BikeToRiding" id="goC-l7-oev"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="QvL-kx-GLf">
@@ -120,22 +120,15 @@
                                 <color key="tintColor" red="1" green="0.96339006439999997" blue="0.90902316289999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0ti-ZH-nc1">
-                                <rect key="frame" x="105" y="421" width="110" height="110"/>
+                                <rect key="frame" x="133" y="450" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" id="3kC-L2-iZe" userLabel="Text View - Desc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Released into the wild by Hanners " textAlignment="center" selectable="NO" id="3kC-L2-iZe" userLabel="Text View - Desc">
                                 <rect key="frame" x="35" y="513" width="251" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Released into the wild by Hanners ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <color key="textColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -159,7 +152,7 @@
         <!--Deposit View Controller-->
         <scene sceneID="q5p-fR-gbJ">
             <objects>
-                <viewController id="Qgq-nh-dmJ" userLabel="Deposit View Controller" sceneMemberID="viewController">
+                <viewController id="Qgq-nh-dmJ" userLabel="Deposit View Controller" customClass="PayDepositViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="neb-X1-v1a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -263,13 +256,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r8h-dY-iG5" kind="push" id="4CS-xh-V8W"/>
+                                    <action selector="pay:" destination="Qgq-nh-dmJ" eventType="touchUpInside" id="XUs-lf-BXV"/>
+                                    <segue destination="r8h-dY-iG5" kind="push" identifier="DepositToUnlockBikeSegue" id="4CS-xh-V8W"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Deposit" id="6nE-i9-FS0"/>
+                    <connections>
+                        <outlet property="payNowButton" destination="P9J-Z6-DXq" id="VOP-vS-dFc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPr-tL-vMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,14 +450,13 @@
                     <navigationItem key="navigationItem" title="Wild Bikes" id="nis-Sy-6vX"/>
                     <connections>
                         <outlet property="bikeName" destination="hyi-5r-49F" id="dec-s2-Y3p"/>
-                        <segue destination="Qgq-nh-dmJ" kind="push" id="a9H-qc-2dp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hK2-BA-3Km" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1190" y="182"/>
         </scene>
-        <!--Returned Bike View Controller-->
+        <!--Returned Bike View Controller - Thank You-->
         <scene sceneID="9FI-3n-C1R">
             <objects>
                 <viewController id="ibA-2t-RXh" customClass="ReturnedBikeViewController" sceneMemberID="viewController">
@@ -601,7 +597,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="99u-MS-m9g"/>
+                    <navigationItem key="navigationItem" title="Thank You" id="99u-MS-m9g"/>
                     <connections>
                         <outlet property="bikeName" destination="tjy-oc-Rle" id="wRg-fl-f7P"/>
                         <outlet property="donationAmount" destination="ifH-QQ-rwy" id="gFM-Z3-N9s"/>
@@ -614,7 +610,7 @@
             </objects>
             <point key="canvasLocation" x="1660" y="182"/>
         </scene>
-        <!--Thank You View Controller-->
+        <!--Thank You View Controller - Thank You-->
         <scene sceneID="MNA-uP-tY1">
             <objects>
                 <viewController id="r77-0m-z6W" customClass="ThankYouViewController" sceneMemberID="viewController">
@@ -665,7 +661,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jRd-4Q-d3h"/>
+                    <navigationItem key="navigationItem" title="Thank You" id="jRd-4Q-d3h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghL-rp-XW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
