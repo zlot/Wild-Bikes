@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller - Shop-->
+        <!--Main View Controller - Wild Bikes-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="MainViewController" sceneMemberID="viewController">
@@ -65,19 +65,72 @@
                                     <action selector="logOut:" destination="2" eventType="touchUpInside" id="Vac-w7-wZf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dyi-nX-HLh">
+                                <rect key="frame" x="116" y="416" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="To Map View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="2" eventType="touchUpInside" id="yaF-D1-fei"/>
+                                    <segue destination="kkP-Gm-vfq" kind="push" id="qck-tz-G7O"/>
+                                </connections>
+                            </button>
+>>>>>>> integrate-map
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Shop" id="3t3-wF-ffv"/>
+                    <navigationItem key="navigationItem" title="Wild Bikes" id="3t3-wF-ffv"/>
                     <connections>
                         <outlet property="payNowButton" destination="reP-B2-UoP" id="q54-Or-ZVF"/>
                         <outlet property="successView" destination="Qtp-6a-bII" id="Asz-wM-FU3"/>
+                        <segue destination="kkP-Gm-vfq" kind="push" id="OGD-H9-RU4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="182"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="UNZ-VY-TST">
+            <objects>
+                <viewController id="kkP-Gm-vfq" userLabel="Map View Controller" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q83-yG-lL5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="akF-HQ-azx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wild Bikes" id="bCa-RG-WMF" userLabel="Navigation Items"/>
+                    <connections>
+                        <outlet property="mapView" destination="akF-HQ-azx" id="rFc-OT-BL0"/>
+                        <segue destination="En1-zr-IGs" kind="push" identifier="MapToBikeSegue" id="L8c-d3-9w1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQB-lt-Ysl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="183"/>
+        </scene>
+        <!--Bike Detail View Controller-->
+        <scene sceneID="RH8-27-ayA">
+            <objects>
+                <viewController id="En1-zr-IGs" userLabel="Bike Detail View Controller" customClass="BikeDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vxb-mq-NiS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Enr-wW-eD8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yda-33-Ykv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="182"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h9B-Xw-xdJ">
@@ -103,4 +156,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="qck-tz-G7O"/>
+    </inferredMetricsTieBreakers>
 </document>

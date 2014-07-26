@@ -22,7 +22,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.wildbikes.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.wildbikes.WildBikes</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -38,14 +38,14 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1542924079268838</string>
+				<string>fb1491844171056328</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>2.1.6</string>
 	<key>FacebookAppID</key>
-	<string>1542924079268838</string>
+	<string>1491844171056328</string>
 	<key>FacebookDisplayName</key>
 	<string>Wild Bikes</string>
 	<key>LSRequiresIPhoneOS</key>
