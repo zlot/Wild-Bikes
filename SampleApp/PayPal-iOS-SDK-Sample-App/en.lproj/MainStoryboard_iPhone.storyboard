@@ -144,6 +144,126 @@
             </objects>
             <point key="canvasLocation" x="769" y="182"/>
         </scene>
+        <!--Deposit View Controller-->
+        <scene sceneID="q5p-fR-gbJ">
+            <objects>
+                <viewController id="Qgq-nh-dmJ" userLabel="Deposit View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="neb-X1-v1a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="L6V-md-ATi">
+                                <rect key="frame" x="46" y="209" width="237" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LightRectangleLarge.png" id="vgI-wT-8BU">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mu0-bz-FC5">
+                                        <rect key="frame" x="20" y="26" width="187" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="$15">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.85490196080000003" green="0.10980392160000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="36" name="HelveticaNeue-Medium"/>
+                                                    <font key="NSOriginalFont" size="36" name="HelveticaNeue-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The deposit will be returned when you release the bike by" textAlignment="center" id="RSw-Lv-aVo">
+                                <rect key="frame" x="43" y="329" width="240" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.69019609689999994" green="0.70588237050000002" blue="0.7254902124" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="We trust you’ll take good care of" textAlignment="center" id="qR4-aI-mBg">
+                                <rect key="frame" x="47" y="73" width="240" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.69019609689999994" green="0.70588237050000002" blue="0.7254902124" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="and release him after your ride. But just in case, a small deposit will be charged to your Paypal account:" textAlignment="center" id="rkh-Y4-18N">
+                                <rect key="frame" x="47" y="134" width="240" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.69019609689999994" green="0.70588237050000002" blue="0.7254902124" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gJO-Vh-hpM">
+                                <rect key="frame" x="67" y="110" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="DRAGON">
+                                        <attributes>
+                                            <color key="NSColor" red="0.85490196080000003" green="0.10980392160000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u6B-iJ-Y4E">
+                                <rect key="frame" x="61" y="394" width="206" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="THUR 30 JUL, 2:50PM">
+                                        <attributes>
+                                            <color key="NSColor" red="0.85490196080000003" green="0.10980392160000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P9J-Z6-DXq">
+                                <rect key="frame" x="18" y="440" width="282" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="OkTakeTheMoneyBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r8h-dY-iG5" kind="push" id="4CS-xh-V8W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Deposit" id="6nE-i9-FS0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPr-tL-vMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="-476"/>
+        </scene>
+        <!--View Controller - Unlock Bike-->
+        <scene sceneID="pFJ-In-TGl">
+            <objects>
+                <viewController id="r8h-dY-iG5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pNo-QI-o9H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Unlock Bike" id="kLX-3J-Khg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4AH-KM-08I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="-514"/>
+        </scene>
         <!--Riding Mode View Controller - Wild Bikes-->
         <scene sceneID="rSC-dE-t1S">
             <objects>
@@ -242,6 +362,7 @@
                     <navigationItem key="navigationItem" title="Wild Bikes" id="nis-Sy-6vX"/>
                     <connections>
                         <outlet property="bikeName" destination="hyi-5r-49F" id="dec-s2-Y3p"/>
+                        <segue destination="Qgq-nh-dmJ" kind="push" id="a9H-qc-2dp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hK2-BA-3Km" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -352,11 +473,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.84999999999999998" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Alternatively you can donate this money to our charity, the Heart Foundation" textAlignment="center" selectable="NO" id="Zuj-9L-vkp" userLabel="Text View - Desc">
-                                <rect key="frame" x="35" y="372" width="251" height="44"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Alternatively you can donate this money to our charity, the Heart Foundation" textAlignment="center" selectable="NO" id="Zuj-9L-vkp" userLabel="Text View - Desc">
+                                <rect key="frame" x="35" y="372" width="251" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -400,7 +521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crG-6q-KCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584" y="179"/>
+            <point key="canvasLocation" x="1660" y="182"/>
         </scene>
         <!--Thank You View Controller-->
         <scene sceneID="MNA-uP-tY1">
@@ -431,7 +552,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="You have successfully donated $X to the Heart Foundation!">
                                         <attributes>
-                                            <color key="NSColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -482,6 +603,7 @@
         <image name="Collect.png" width="282" height="53"/>
         <image name="Donate15.png" width="282" height="53"/>
         <image name="LightRectangleLarge.png" width="237" height="100"/>
+        <image name="OkTakeTheMoneyBtn.png" width="282" height="53"/>
         <image name="PixelBike.png" width="207" height="139"/>
         <image name="RideThisBikeBtn.png" width="223" height="59"/>
         <image name="check.png" width="84" height="75"/>
