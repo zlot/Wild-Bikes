@@ -20,8 +20,6 @@
 		849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE70116D4352100E03EEC /* Default-568h@2x.png */; };
 		849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */; };
 		849BE70B16D4352100E03EEC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE70A16D4352100E03EEC /* MainViewController.m */; };
-		849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE72216D43F5E00E03EEC /* ios_sample_icon.png */; };
-		849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE72416D43F7F00E03EEC /* ios_sample_icon@2x.png */; };
 		849BE72A16D4401C00E03EEC /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BE72616D4401C00E03EEC /* libPayPalMobile.a */; };
 		849BE74016D440D700E03EEC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BE72E16D440B100E03EEC /* AudioToolbox.framework */; };
 		849BE74116D440D700E03EEC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BE72F16D440B100E03EEC /* CoreMedia.framework */; };
@@ -39,6 +37,8 @@
 		849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74D16D443EC00E03EEC /* button_secondary@2x.png */; };
 		AECF93721984331300A1B12D /* BikeMini-11.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF93711984331300A1B12D /* BikeMini-11.png */; };
 		AECF937519843D2E00A1B12D /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF937419843D2E00A1B12D /* Bicycle.m */; };
+		AECF9377198446A700A1B12D /* ios_sample_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF9376198446A700A1B12D /* ios_sample_icon.png */; };
+		AECF9379198446B200A1B12D /* ios_sample_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF9378198446B200A1B12D /* ios_sample_icon@2x.png */; };
 		C92E2DD519840686007CB709 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
 		C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD71984080A007CB709 /* BikePhoto.png */; };
 		C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD81984080A007CB709 /* BikePhoto@2x.png */; };
@@ -91,8 +91,6 @@
 		849BE70416D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		849BE70916D4352100E03EEC /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		849BE70A16D4352100E03EEC /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		849BE72216D43F5E00E03EEC /* ios_sample_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_sample_icon.png; sourceTree = "<group>"; };
-		849BE72416D43F7F00E03EEC /* ios_sample_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios_sample_icon@2x.png"; sourceTree = "<group>"; };
 		849BE72616D4401C00E03EEC /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPayPalMobile.a; path = ../PayPalMobile/libPayPalMobile.a; sourceTree = "<group>"; };
 		849BE72716D4401C00E03EEC /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalMobile.h; path = ../PayPalMobile/PayPalMobile.h; sourceTree = "<group>"; };
 		849BE72816D4401C00E03EEC /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalPayment.h; path = ../PayPalMobile/PayPalPayment.h; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		AECF93711984331300A1B12D /* BikeMini-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikeMini-11.png"; sourceTree = "<group>"; };
 		AECF937319843D2E00A1B12D /* Bicycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
 		AECF937419843D2E00A1B12D /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
+		AECF9376198446A700A1B12D /* ios_sample_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_sample_icon.png; sourceTree = "<group>"; };
+		AECF9378198446B200A1B12D /* ios_sample_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios_sample_icon@2x.png"; sourceTree = "<group>"; };
 		C92E2DD71984080A007CB709 /* BikePhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BikePhoto.png; sourceTree = "<group>"; };
 		C92E2DD81984080A007CB709 /* BikePhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikePhoto@2x.png"; sourceTree = "<group>"; };
 		C92E2DD91984080A007CB709 /* RideThisBikeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RideThisBikeBtn.png; sourceTree = "<group>"; };
@@ -283,10 +283,10 @@
 		849BE71416D4389D00E03EEC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AECF9378198446B200A1B12D /* ios_sample_icon@2x.png */,
+				AECF9376198446A700A1B12D /* ios_sample_icon.png */,
 				2D48B18416EE8F0800C83CD2 /* check.png */,
 				2D48B18516EE8F0800C83CD2 /* check@2x.png */,
-				849BE72216D43F5E00E03EEC /* ios_sample_icon.png */,
-				849BE72416D43F7F00E03EEC /* ios_sample_icon@2x.png */,
 				849BE74A16D443EC00E03EEC /* button_secondary_selected.png */,
 				849BE74B16D443EC00E03EEC /* button_secondary_selected@2x.png */,
 				849BE74C16D443EC00E03EEC /* button_secondary.png */,
@@ -310,7 +310,7 @@
 		C92E2DD6198407FF007CB709 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				AECF93711984331300A1B12D /* BikeMini-11.png */,				
+				AECF93711984331300A1B12D /* BikeMini-11.png */,
 				C9DE7C6E1984345200DABCDE /* Donate15.png */,
 				C9DE7C6F1984345200DABCDE /* Donate15@2x.png */,
 				C9DE7C6A1984330E00DABCDE /* Collect.png */,
@@ -362,7 +362,7 @@
 				ORGANIZATIONNAME = WildBikes;
 				TargetAttributes = {
 					849BE6E716D4352100E03EEC = {
-						DevelopmentTeam = R3F9LF8H5Z;
+						DevelopmentTeam = 3SL39F2287;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -408,9 +408,7 @@
 				C9E7F17F198423F8008F1E6F /* PixelBike.png in Resources */,
 				C9DE7C701984345200DABCDE /* Donate15.png in Resources */,
 				C9DE7C681984327700DABCDE /* LightRectangleLarge.png in Resources */,
-				849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */,
 				C9DE7C711984345200DABCDE /* Donate15@2x.png in Resources */,
-				849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */,
 				C9E7F180198423F8008F1E6F /* PixelBike@2x.png in Resources */,
 				C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */,
 				849BE74E16D443EC00E03EEC /* button_secondary_selected.png in Resources */,
@@ -420,6 +418,8 @@
 				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,
 				2D48B18616EE8F0800C83CD2 /* check.png in Resources */,
 				C9DE7C6C1984330E00DABCDE /* Collect.png in Resources */,
+				AECF9379198446B200A1B12D /* ios_sample_icon@2x.png in Resources */,
+				AECF9377198446A700A1B12D /* ios_sample_icon.png in Resources */,
 				C9E7F184198424CE008F1E6F /* CancelBtn.png in Resources */,
 				2D48B18716EE8F0800C83CD2 /* check@2x.png in Resources */,
 				C9E7F182198424C7008F1E6F /* CancelBtn@2x.png in Resources */,
