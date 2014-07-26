@@ -25,8 +25,9 @@
     
     // If you would like all objects to be private by default, remove this line.
     [defaultACL setPublicReadAccess:YES];
+    [defaultACL setPublicWriteAccess:YES];
     
-    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:NO];
 //    if (application.applicationState != UIApplicationStateBackground) {
 //        // Track an app open here if we launch with a push, unless
 //        // "content_available" was used to trigger a background push (introduced
