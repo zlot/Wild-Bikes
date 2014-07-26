@@ -102,7 +102,14 @@
 // Delegate method - handle annotation tap
 - (void) mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
 //    NSLog(@"calloutAccessoryControlTapped: annotation = %@", view.annotation);
-        [self performSegueWithIdentifier:@"MapToBikeSegue" sender:view]; // Note - sending view rather than self - in order to gain access to annotation
+    
+    // don't segue if bike is in use
+    MyAnnotation *annotation = (MyAnnotation *) view.annotation;
+    if ([annotation.bike.isAvailable boolValue] == NO) {
+        return;
+    }
+    
+    [self performSegueWithIdentifier:@"MapToBikeSegue" sender:view]; // Note - sending view rather than self - in order to gain access to annotation
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(MKAnnotationView *)sender
