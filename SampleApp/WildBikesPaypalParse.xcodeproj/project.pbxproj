@@ -52,6 +52,8 @@
 		C92E2DE419840D20007CB709 /* Helmet.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DE319840D20007CB709 /* Helmet.png */; };
 		C9337F51198425C600F2E877 /* ReturnedBikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9337F50198425C600F2E877 /* ReturnedBikeViewController.m */; };
 		C936E8E6198422550066DED0 /* RidingModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C936E8E5198422550066DED0 /* RidingModeViewController.m */; };
+		C93A522B19846976008CB124 /* LightRectangleSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A522919846976008CB124 /* LightRectangleSmall.png */; };
+		C93A522C19846976008CB124 /* LightRectangleSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A522A19846976008CB124 /* LightRectangleSmall@2x.png */; };
 		C98D299A1983D59000F24042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D29991983D59000F24042 /* CFNetwork.framework */; };
 		C98D299C1983D5AB00F24042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299B1983D5AB00F24042 /* libz.dylib */; };
 		C98D299E1983D5B900F24042 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299D1983D5B900F24042 /* StoreKit.framework */; };
@@ -142,6 +144,8 @@
 		C9337F50198425C600F2E877 /* ReturnedBikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnedBikeViewController.m; sourceTree = "<group>"; };
 		C936E8E4198422550066DED0 /* RidingModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RidingModeViewController.h; sourceTree = "<group>"; };
 		C936E8E5198422550066DED0 /* RidingModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RidingModeViewController.m; sourceTree = "<group>"; };
+		C93A522919846976008CB124 /* LightRectangleSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightRectangleSmall.png; sourceTree = "<group>"; };
+		C93A522A19846976008CB124 /* LightRectangleSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightRectangleSmall@2x.png"; sourceTree = "<group>"; };
 		C98D29991983D59000F24042 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C98D299B1983D5AB00F24042 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C98D299D1983D5B900F24042 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -344,6 +348,8 @@
 		C92E2DD6198407FF007CB709 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C93A522919846976008CB124 /* LightRectangleSmall.png */,
+				C93A522A19846976008CB124 /* LightRectangleSmall@2x.png */,
 				C9F1C5A119845A7200DA2F4A /* Lock.png */,
 				C9F1C5A219845A7200DA2F4A /* Lock@2x.png */,
 				C9F1C59F198458B700DA2F4A /* OkTakeTheMoneyBtn@2x.png */,
@@ -460,6 +466,7 @@
 				849BE70016D4352100E03EEC /* Default@2x.png in Resources */,
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
 				C92E2DDE1984080A007CB709 /* RideThisBikeBtn@2x.png in Resources */,
+				C93A522C19846976008CB124 /* LightRectangleSmall@2x.png in Resources */,
 				C9DE7C691984327700DABCDE /* LightRectangleLarge@2x.png in Resources */,
 				849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */,
 				C9E7F17F198423F8008F1E6F /* PixelBike.png in Resources */,
@@ -478,6 +485,7 @@
 				C9F1C5A719845C6800DA2F4A /* Black Rider_Owner.png in Resources */,
 				849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */,
 				849BE75016D443EC00E03EEC /* button_secondary.png in Resources */,
+				C93A522B19846976008CB124 /* LightRectangleSmall.png in Resources */,
 				849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */,
 				C9F1C5A819845C6800DA2F4A /* Black Rider__Owner@2x.png in Resources */,
 				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,

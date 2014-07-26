@@ -24,6 +24,7 @@
     // set bike name
     NSString *myBikeName = _bike.name;
     self.bikeName.text = myBikeName;
+    self.passcode.text = _bike.passcode;
 }
 
 

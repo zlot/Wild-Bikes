@@ -2,7 +2,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
-
+#import "RidingModeViewController.h"
 
 // Set the environment:
 // - For live charges, use PayPalEnvironmentProduction (default).
@@ -49,6 +49,18 @@
     
     // Preconnect to PayPal early
     [PayPalMobile preconnectWithEnvironment:self.environment];
+}
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"DepositToUnlockBikeSegue"])
+    {
+        RidingModeViewController *destinationViewController = segue.destinationViewController;
+        destinationViewController.bike = self.bike;
+    } else {
+        NSLog(@"PFS:something else");
+    }
 }
 
 

@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *bikeName;
 
 @property (nonatomic, retain) Bicycle *bike;
+@property (weak, nonatomic) IBOutlet UILabel *passcode;
 
 @end
