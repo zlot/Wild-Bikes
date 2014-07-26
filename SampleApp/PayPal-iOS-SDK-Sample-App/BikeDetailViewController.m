@@ -20,6 +20,18 @@
     
     // set title
     self.uiNavigationItem.title = myBikeName;
+//    self.bikeDescription.text = _bike.bikeDescription;
+
+    
+    [self.bikeImage setImage:[UIImage imageNamed: [myBikeName stringByAppendingString:@".png"]]];
+    
+    if(_bike.hasHelmet == 1) {
+        [self.helmetImage setImage:[UIImage imageNamed: @"Helmet.png"]];
+    }
+        
+    NSString *appendedText = [@"Released into the wild by " stringByAppendingString:_bike.originalOwnerName];
+    self.releasedText.text = appendedText;
+
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
