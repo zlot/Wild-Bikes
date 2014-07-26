@@ -353,7 +353,7 @@
                                 <color key="backgroundColor" white="0.84999999999999998" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Alternatively you can donate this money to our charity, the Heart Foundation" textAlignment="center" selectable="NO" id="Zuj-9L-vkp" userLabel="Text View - Desc">
-                                <rect key="frame" x="35" y="378" width="251" height="83"/>
+                                <rect key="frame" x="35" y="372" width="251" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -370,10 +370,17 @@
                                     <action selector="payWithDonationAmount:" destination="ibA-2t-RXh" eventType="touchUpInside" id="wbC-Ew-Ide"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="8" minimumFontSize="17" id="ifH-QQ-rwy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" id="ifH-QQ-rwy">
                                 <rect key="frame" x="47" y="507" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="5">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="textFieldDidBeginEditing:" destination="ibA-2t-RXh" eventType="editingDidBegin" id="dKb-qS-3EK"/>
@@ -388,11 +395,69 @@
                         <outlet property="donationAmount" destination="ifH-QQ-rwy" id="gFM-Z3-N9s"/>
                         <outlet property="payNowButton" destination="bmC-kj-ofz" id="CC7-m0-2Vy"/>
                         <outlet property="successView" destination="5sR-3D-6vS" id="3Zt-2g-NQf"/>
+                        <segue destination="r77-0m-z6W" kind="push" identifier="PaypalPaymentToThankYouSegue" id="xZd-lV-pqm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crG-6q-KCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584" y="179"/>
+        </scene>
+        <!--Thank You View Controller-->
+        <scene sceneID="MNA-uP-tY1">
+            <objects>
+                <viewController id="r77-0m-z6W" customClass="ThankYouViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K5h-9r-2hG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SEN-qA-S8a">
+                                <rect key="frame" x="67" y="115" width="187" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="THANKS!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.85490196080000003" green="0.10980392160000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" id="B6F-Pa-MYF" userLabel="Text View - Desc">
+                                <rect key="frame" x="35" y="170" width="251" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You have successfully donated $X to the Heart Foundation!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qrj-gE-vyK">
+                                <rect key="frame" x="20" y="437" width="282" height="53"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BackToHomeBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToHome:" destination="r77-0m-z6W" eventType="touchUpInside" id="s0y-bB-UNi"/>
+                                    <action selector="pay:" destination="ibA-2t-RXh" eventType="touchUpInside" id="dcP-5a-hd6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jRd-4Q-d3h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghL-rp-XW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2062" y="173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h9B-Xw-xdJ">
@@ -411,6 +476,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackToHomeBtn.png" width="282" height="53"/>
         <image name="BikePhoto.png" width="320" height="216"/>
         <image name="CancelBtn.png" width="282" height="53"/>
         <image name="Collect.png" width="282" height="53"/>
