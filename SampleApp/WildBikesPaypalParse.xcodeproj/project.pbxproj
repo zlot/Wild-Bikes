@@ -41,7 +41,6 @@
 		C98D299C1983D5AB00F24042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299B1983D5AB00F24042 /* libz.dylib */; };
 		C98D299E1983D5B900F24042 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299D1983D5B900F24042 /* StoreKit.framework */; };
 		C98D9E251983E33500C8C102 /* BikeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D9E241983E33500C8C102 /* BikeDetailViewController.m */; };
-		C9A0C8D71983F7AA00BEEF25 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C8D61983F7AA00BEEF25 /* Entitlements.plist */; };
 		C9AA606D1983D6D9000A48BC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA606C1983D6D9000A48BC /* Social.framework */; };
 		C9AA606F1983D707000A48BC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA606E1983D707000A48BC /* FacebookSDK.framework */; };
 		C9AA60711983D71E000A48BC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60701983D71E000A48BC /* Parse.framework */; };
@@ -97,7 +96,6 @@
 		C98D299D1983D5B900F24042 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C98D9E231983E33500C8C102 /* BikeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeDetailViewController.h; sourceTree = "<group>"; };
 		C98D9E241983E33500C8C102 /* BikeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeDetailViewController.m; sourceTree = "<group>"; };
-		C9A0C8D61983F7AA00BEEF25 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		C9AA606C1983D6D9000A48BC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C9AA606E1983D707000A48BC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		C9AA60701983D71E000A48BC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -220,7 +218,6 @@
 		849BE6F216D4352100E03EEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9A0C8D61983F7AA00BEEF25 /* Entitlements.plist */,
 				849BE6F316D4352100E03EEC /* WildBikesPaypalParse-Info.plist */,
 				849BE6F416D4352100E03EEC /* InfoPlist.strings */,
 				849BE6F716D4352100E03EEC /* main.m */,
@@ -326,7 +323,6 @@
 				849BE6FE16D4352100E03EEC /* Default.png in Resources */,
 				849BE70016D4352100E03EEC /* Default@2x.png in Resources */,
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
-				C9A0C8D71983F7AA00BEEF25 /* Entitlements.plist in Resources */,
 				849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */,
 				849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */,
 				849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */,

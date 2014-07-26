@@ -46,9 +46,15 @@
     
     
     // PARSE STUFF
-    PFUser *currentUser = [PFUser currentUser];
+    [self authenticateUser];
     
-    if (currentUser.username) {
+
+}
+
+- (void)authenticateUser {
+    PFUser *currentUser = [PFUser currentUser];
+
+    if (currentUser.username != nil) {
         // can use this session token to get info out of core database?
         NSLog(@"currentUser.sessionToken: %@",currentUser.sessionToken);
         
@@ -68,16 +74,16 @@
          */
         
     } else {
-        [PFFacebookUtils logInWithPermissions:@[@"email"] block:^(PFUser *user, NSError *error) {
+        [PFFacebookUtils logInWithPermissions:@[@"publish_actions"] block:^(PFUser *user, NSError *error) {
             // link existing PFUser to Facebook account.
             //on successful login, the existing PFUser is updated with the Facebook information. Future logins via Facebook will now log in the user to their existing account.
-            if (![PFFacebookUtils isLinkedWithUser:user]) {
-                [PFFacebookUtils linkUser:user permissions:nil block:^(BOOL succeeded, NSError *error) {
-                    if (succeeded) {
-                        NSLog(@"Woohoo, user logged in with Facebook!");
-                    }
-                }];
-            }
+            //            if (![PFFacebookUtils isLinkedWithUser:user]) {
+            //                [PFFacebookUtils linkUser:user permissions:nil block:^(BOOL succeeded, NSError *error) {
+            //                    if (succeeded) {
+            //                        NSLog(@"Woohoo, user logged in with Facebook!");
+            //                    }
+            //                }];
+            //            }
             
             if (!user) {
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
@@ -90,13 +96,12 @@
             }
         }];
     }
-    
-    
 
 }
 
-- (void)logOut {
+- (IBAction)logOut:(id)sender {
     [PFUser logOut];
+    [self authenticateUser];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -189,6 +194,5 @@
   [UIView commitAnimations];
 }
 
-- (IBAction)logOut:(id)sender {
-}
+
 @end
