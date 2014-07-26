@@ -71,29 +71,42 @@
         return nil;
     
     // Create MKPinAnnotationView - for custom annotations
-    static NSString *identifier = @"myAnnotation";
-    MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-    if (!annotationView)
-    {
-        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-        // MKPinAnnotationView specific:
-        //        annotationView.pinColor = MKPinAnnotationColorGreen;// MKPinAnnotationColorPurple;
-        //        annotationView.animatesDrop = YES;
-        annotationView.canShowCallout = YES;
+    
+    MyAnnotation *ann = (MyAnnotation *) annotation;
+    Bicycle *bike = ann.bike;
+    if ([bike.isAvailable boolValue] == NO) {
         
-        annotationView.image = [UIImage imageNamed:@"MiniBike2.png"];
-        
-        MyAnnotation *ann = (MyAnnotation *) annotation;
-        Bicycle *bike = ann.bike;
-        if ([bike.isAvailable boolValue] == NO) {
+        static NSString *identifier = @"myAnnotation";
+        MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (!annotationView)
+        {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            annotationView.canShowCallout = YES;
+            
             annotationView.image = [UIImage imageNamed:@"MiniBike3.png"];
+            
+        }else {
+            annotationView.annotation = annotation;
         }
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            
+    } else {
         
+        static NSString *identifier = @"myAnnotation";
+        MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (!annotationView)
+        {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            annotationView.canShowCallout = YES;
+            
+            annotationView.image = [UIImage imageNamed:@"MiniBike2.png"];
+            
+        }else {
+            annotationView.annotation = annotation;
+        }
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         
-    }else {
-        annotationView.annotation = annotation;
     }
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     
     return annotationView;
 

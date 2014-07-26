@@ -25,6 +25,8 @@
     NSString *myBikeName = _bike.name;
     self.bikeName.text = myBikeName;
     
+	self.passcode.text = _bike.passcode;
+
     // DISABLE BACK
     // set the left bar button to a nice trash can
     self.navigationItem.leftBarButtonItem.title = @"";
