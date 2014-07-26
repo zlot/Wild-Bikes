@@ -71,29 +71,45 @@
         return nil;
     
     // Create MKPinAnnotationView - for custom annotations
-    static NSString *identifier = @"myAnnotation";
-    MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-    if (!annotationView)
-    {
-        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-        // MKPinAnnotationView specific:
-        //        annotationView.pinColor = MKPinAnnotationColorGreen;// MKPinAnnotationColorPurple;
-        //        annotationView.animatesDrop = YES;
-        annotationView.canShowCallout = YES;
+    
+    MyAnnotation *ann = (MyAnnotation *) annotation;
+    Bicycle *bike = ann.bike;
+    
+    MKAnnotationView * annotationView;
+    
+    if ([bike.isAvailable boolValue] == NO) {
         
-        annotationView.image = [UIImage imageNamed:@"BikeMini-11.png"];
-        
-        MyAnnotation *ann = (MyAnnotation *) annotation;
-        Bicycle *bike = ann.bike;
-        if ([bike.isAvailable boolValue] == NO) {
-            annotationView.image = [UIImage imageNamed:@"BikeMini-13.png"];
+        static NSString *identifier = @"myAnnotation-inUse";
+        annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (!annotationView)
+        {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            annotationView.canShowCallout = YES;
+            
+            annotationView.image = [UIImage imageNamed:@"MiniBike3.png"];
+            
+        }else {
+            annotationView.annotation = annotation;
         }
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            
+    } else {
         
+        static NSString *identifier = @"myAnnotation-available";
+        annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (!annotationView)
+        {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            annotationView.canShowCallout = YES;
+            
+            annotationView.image = [UIImage imageNamed:@"MiniBike2.png"];
+            
+        }else {
+            annotationView.annotation = annotation;
+        }
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         
-    }else {
-        annotationView.annotation = annotation;
     }
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     
     return annotationView;
 
@@ -154,9 +170,6 @@
     //reset bikes
     bikes = [[NSMutableArray alloc] init];
     
-    // remove all annotations (for now)
-    [self.mapView removeAnnotations:[self.mapView annotations]];
-    
     PFQuery *query = [PFQuery queryWithClassName:@"Bicycle2"];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -181,17 +194,10 @@
                 bike.latitude = [NSNumber numberWithDouble:point.latitude];
                 bike.longitude = [NSNumber numberWithDouble:point.longitude];
                 [bikes addObject:bike];
-                
-                // Create Annotation - Title Text
-                NSString *text = @"In Use";
-                if ([object[@"isAvailable"] boolValue] == YES) {
-                    text = @"Available";
-                }
-                // Create Annotation
-                MyAnnotation *annotation;
-                annotation = [[MyAnnotation alloc] initWithCoordinate:coordinate title:text bike:bike];
-                [self.mapView addAnnotation:annotation];
             }
+            
+            [self updateAnnotationsFromBikes];
+            
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -201,4 +207,24 @@
     }];
 }
 
+- (void) updateAnnotationsFromBikes
+{
+    
+    // remove all annotations (for now)
+    [self.mapView removeAnnotations:[self.mapView annotations]];
+    
+    // Fill Annotations
+    for (Bicycle *bike in bikes) {
+        
+        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([bike.latitude doubleValue], [bike.longitude doubleValue]);
+        NSString *text = @"In Use";
+        if ([bike.isAvailable boolValue] == YES) {
+            text = @"Available";
+        }
+        // Create Annotation
+        MyAnnotation *annotation;
+        annotation = [[MyAnnotation alloc] initWithCoordinate:coordinate title:text bike:bike];
+        [self.mapView addAnnotation:annotation];
+    }
+}
 @end

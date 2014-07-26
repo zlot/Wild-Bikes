@@ -35,6 +35,12 @@
 		849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74B16D443EC00E03EEC /* button_secondary_selected@2x.png */; };
 		849BE75016D443EC00E03EEC /* button_secondary.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74C16D443EC00E03EEC /* button_secondary.png */; };
 		849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74D16D443EC00E03EEC /* button_secondary@2x.png */; };
+		AE1687AC19846A6A00F8C2F5 /* MiniBike3.png in Resources */ = {isa = PBXBuildFile; fileRef = AE1687A619846A6A00F8C2F5 /* MiniBike3.png */; };
+		AE1687AD19846A6A00F8C2F5 /* MiniBike2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE1687A719846A6A00F8C2F5 /* MiniBike2.png */; };
+		AE1687AE19846A6A00F8C2F5 /* MiniBike1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE1687A819846A6A00F8C2F5 /* MiniBike1.png */; };
+		AE1687AF19846A6A00F8C2F5 /* MiniBike3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE1687A919846A6A00F8C2F5 /* MiniBike3@2x.png */; };
+		AE1687B019846A6A00F8C2F5 /* MiniBike2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE1687AA19846A6A00F8C2F5 /* MiniBike2@2x.png */; };
+		AE1687B119846A6A00F8C2F5 /* MiniBike1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE1687AB19846A6A00F8C2F5 /* MiniBike1@2x.png */; };
 		AECF93721984331300A1B12D /* BikeMini-11.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF93711984331300A1B12D /* BikeMini-11.png */; };
 		AECF937519843D2E00A1B12D /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF937419843D2E00A1B12D /* Bicycle.m */; };
 		AECF9377198446A700A1B12D /* ios_sample_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF9376198446A700A1B12D /* ios_sample_icon.png */; };
@@ -137,6 +143,12 @@
 		849BE74B16D443EC00E03EEC /* button_secondary_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary_selected@2x.png"; sourceTree = "<group>"; };
 		849BE74C16D443EC00E03EEC /* button_secondary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary.png; sourceTree = "<group>"; };
 		849BE74D16D443EC00E03EEC /* button_secondary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary@2x.png"; sourceTree = "<group>"; };
+		AE1687A619846A6A00F8C2F5 /* MiniBike3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiniBike3.png; sourceTree = "<group>"; };
+		AE1687A719846A6A00F8C2F5 /* MiniBike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiniBike2.png; sourceTree = "<group>"; };
+		AE1687A819846A6A00F8C2F5 /* MiniBike1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiniBike1.png; sourceTree = "<group>"; };
+		AE1687A919846A6A00F8C2F5 /* MiniBike3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MiniBike3@2x.png"; sourceTree = "<group>"; };
+		AE1687AA19846A6A00F8C2F5 /* MiniBike2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MiniBike2@2x.png"; sourceTree = "<group>"; };
+		AE1687AB19846A6A00F8C2F5 /* MiniBike1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MiniBike1@2x.png"; sourceTree = "<group>"; };
 		AECF93711984331300A1B12D /* BikeMini-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikeMini-11.png"; sourceTree = "<group>"; };
 		AECF937319843D2E00A1B12D /* Bicycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
 		AECF937419843D2E00A1B12D /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
@@ -378,6 +390,12 @@
 				C93A522E19846F98008CB124 /* DonateSmallBtn@2x.png */,
 				C93A522919846976008CB124 /* LightRectangleSmall.png */,
 				C93A522A19846976008CB124 /* LightRectangleSmall@2x.png */,
+				AE1687A619846A6A00F8C2F5 /* MiniBike3.png */,
+				AE1687A719846A6A00F8C2F5 /* MiniBike2.png */,
+				AE1687A819846A6A00F8C2F5 /* MiniBike1.png */,
+				AE1687A919846A6A00F8C2F5 /* MiniBike3@2x.png */,
+				AE1687AA19846A6A00F8C2F5 /* MiniBike2@2x.png */,
+				AE1687AB19846A6A00F8C2F5 /* MiniBike1@2x.png */,
 				C9F1C5A119845A7200DA2F4A /* Lock.png */,
 				C9F1C5A219845A7200DA2F4A /* Lock@2x.png */,
 				C9F1C59F198458B700DA2F4A /* OkTakeTheMoneyBtn@2x.png */,
@@ -497,9 +515,11 @@
 				849BE6F616D4352100E03EEC /* InfoPlist.strings in Resources */,
 				C93A523019846F98008CB124 /* DonateSmallBtn@2x.png in Resources */,
 				C9F1C59C1984544900DA2F4A /* Black Rider@2x.png in Resources */,
+				AE1687B019846A6A00F8C2F5 /* MiniBike2@2x.png in Resources */,
 				C9F1C5A0198458B700DA2F4A /* OkTakeTheMoneyBtn@2x.png in Resources */,
 				C92E2DDD1984080A007CB709 /* RideThisBikeBtn.png in Resources */,
 				849BE6FE16D4352100E03EEC /* Default.png in Resources */,
+				AE1687AD19846A6A00F8C2F5 /* MiniBike2.png in Resources */,
 				849BE70016D4352100E03EEC /* Default@2x.png in Resources */,
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
 				C92E2DDE1984080A007CB709 /* RideThisBikeBtn@2x.png in Resources */,
@@ -521,6 +541,7 @@
 				C9F1C59E198458AE00DA2F4A /* OkTakeTheMoneyBtn.png in Resources */,
 				C9DE7C711984345200DABCDE /* Donate15@2x.png in Resources */,
 				C9F1C5A319845A7200DA2F4A /* Lock.png in Resources */,
+				AE1687AF19846A6A00F8C2F5 /* MiniBike3@2x.png in Resources */,
 				C928124C19843EBF00BA09F6 /* BackToHomeBtn@2x.png in Resources */,
 				C93A5244198470D1008CB124 /* ImDoneRiding@2x.png in Resources */,
 				C9E7F180198423F8008F1E6F /* PixelBike@2x.png in Resources */,
@@ -538,7 +559,10 @@
 				C9F1C5A819845C6800DA2F4A /* Black Rider__Owner@2x.png in Resources */,
 				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,
 				2D48B18616EE8F0800C83CD2 /* check.png in Resources */,
+				AE1687B119846A6A00F8C2F5 /* MiniBike1@2x.png in Resources */,
+				AE1687AE19846A6A00F8C2F5 /* MiniBike1.png in Resources */,
 				C9DE7C6C1984330E00DABCDE /* Collect.png in Resources */,
+				AE1687AC19846A6A00F8C2F5 /* MiniBike3.png in Resources */,
 				AECF937D1984495800A1B12D /* BikeMini-12.png in Resources */,
 				AECF9379198446B200A1B12D /* ios_sample_icon@2x.png in Resources */,
 				AECF9377198446A700A1B12D /* ios_sample_icon.png in Resources */,
