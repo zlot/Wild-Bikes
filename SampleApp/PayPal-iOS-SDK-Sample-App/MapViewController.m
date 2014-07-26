@@ -37,14 +37,9 @@
     self.mapView.showsUserLocation = YES;
 
     // UPDATES
-//    [self fetchBikesAndupdateAllAnnotations];
-
     // update repetetively
-    [NSTimer scheduledTimerWithTimeInterval:30.0
-                                     target:self
-                                   selector:@selector(fetchBikesAndupdateAllAnnotations)
-                                   userInfo:nil
-                                    repeats:YES];
+    [self repeatingFetchBikesAndUpdateAllAnnotations];
+    
     
 }
 
@@ -128,6 +123,24 @@
 }
 
 // DATA
+- (void) repeatingFetchBikesAndUpdateAllAnnotations
+{
+    
+    float timeToWait = 2.0;
+    int totalBikesFetched = (int) bikes.count;
+    if (totalBikesFetched > 0) {
+        timeToWait = 20.0;
+    }
+    
+    [self fetchBikesAndupdateAllAnnotations];
+    
+    // Constantly call self.
+    [NSTimer scheduledTimerWithTimeInterval:timeToWait
+                                     target:self
+                                   selector:@selector(repeatingFetchBikesAndUpdateAllAnnotations)
+                                   userInfo:nil
+                                    repeats:NO];
+}
 
 - (void) fetchBikesAndupdateAllAnnotations
 {
@@ -176,7 +189,7 @@
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
-        NSLog(@"--");
+        NSLog(@"--Fetched-Bikes--");
         
     }];
 }
