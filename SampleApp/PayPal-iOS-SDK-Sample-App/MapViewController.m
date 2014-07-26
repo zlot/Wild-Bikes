@@ -8,6 +8,8 @@
 
 #import "MapViewController.h"
 
+#import <Parse/Parse.h>
+
 #import "myAnnotation.h"
 
 #define METERS_PER_MILE 1609.344
@@ -23,43 +25,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // MAP
     // Set the mapView delegate to this View Controller
     self.mapView.delegate = self;
-    
     self.mapView.showsUserLocation = YES;
 
+    [self updateAllAnnotations];
     
-    
-    // Set some coordinates
-    CLLocationCoordinate2D coordinate1;
-    coordinate1.latitude = -33.877212;
-    coordinate1.longitude = 151.213796;
-    myAnnotation *annotation = [[myAnnotation alloc] initWithCoordinate:coordinate1 title:@"Speedster"];
-    [self.mapView addAnnotation:annotation];
-    
-    CLLocationCoordinate2D coordinate2;
-    coordinate2.latitude = -33.878610;
-    coordinate2.longitude = 151.215856;
-    myAnnotation *annotation2 = [[myAnnotation alloc] initWithCoordinate:coordinate2 title:@"Sally"];
-    [self.mapView addAnnotation:annotation2];
-    
-    CLLocationCoordinate2D coordinate3;
-    coordinate3.latitude = -33.877255;
-    coordinate3.longitude = 151.216540;
-    myAnnotation *annotation3 = [[myAnnotation alloc] initWithCoordinate:coordinate3 title:@"Pikachu"];
-    [self.mapView addAnnotation:annotation3];
-    
-    CLLocationCoordinate2D coordinate4;
-    coordinate4.latitude = -33.877477;
-    coordinate4.longitude = 151.215682;
-    myAnnotation *annotation4 = [[myAnnotation alloc] initWithCoordinate:coordinate4 title:@"Dragon"];
-    [self.mapView addAnnotation:annotation4];
-    
-    CLLocationCoordinate2D coordinate5;
-    coordinate5.latitude = -33.875313;
-    coordinate5.longitude = 151.215145;
-    myAnnotation *annotation5 = [[myAnnotation alloc] initWithCoordinate:coordinate5 title:@"Black Rider"];
-    [self.mapView addAnnotation:annotation5];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,26 +61,70 @@
     if([annotation isKindOfClass:[MKUserLocation class]])
         return nil;
     
-    // Create MKPinAnnotationView
+    // Create MKPinAnnotationView - for custom annotations
     static NSString *identifier = @"myAnnotation";
-    MKPinAnnotationView * annotationView = (MKPinAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     if (!annotationView)
     {
-        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-        annotationView.pinColor = MKPinAnnotationColorGreen;// MKPinAnnotationColorPurple;
-        annotationView.animatesDrop = YES;
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        // MKPinAnnotationView specific:
+        //        annotationView.pinColor = MKPinAnnotationColorGreen;// MKPinAnnotationColorPurple;
+        //        annotationView.animatesDrop = YES;
         annotationView.canShowCallout = YES;
+        annotationView.image = [UIImage imageNamed:@"BikeMini-11.png"];
+        
     }else {
         annotationView.annotation = annotation;
     }
     annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    
     return annotationView;
+
 }
 
 // Delegate method - handle annotation tap
 - (void) mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
     NSLog(@"calloutAccessoryControlTapped: annotation = %@", view.annotation);
     [self performSegueWithIdentifier:@"MapToBikeSegue" sender:self];
+}
+
+
+- (void) updateAllAnnotations
+{
+    // remove all annotations (for now)
+    [self.mapView removeAnnotations:[self.mapView annotations]];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Bicycle2"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded. The first 100 objects are available in objects
+            for (PFObject *object in objects) {
+                
+                PFGeoPoint *point = object[@"location"];
+                CLLocationCoordinate2D coordinate;
+                
+                coordinate.latitude = point.latitude;
+                coordinate.longitude = point.longitude;
+                
+                myAnnotation *annotation;
+                
+                NSString *text = @"In Use";
+                if ([object[@"isAvailable"] boolValue] == YES) {
+                    text = @"Available";
+                }
+
+                annotation = [[myAnnotation alloc] initWithCoordinate:coordinate title:text];
+                [self.mapView addAnnotation:annotation];
+//                NSLog(@"%@", object[@"name"]);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+        NSLog(@"--");
+        
+    }];
 }
 
 @end
