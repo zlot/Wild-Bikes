@@ -37,7 +37,14 @@
     self.mapView.showsUserLocation = YES;
 
     // UPDATES
-    [self fetchBikesAndupdateAllAnnotations];
+//    [self fetchBikesAndupdateAllAnnotations];
+
+    // update repetetively
+    [NSTimer scheduledTimerWithTimeInterval:30.0
+                                     target:self
+                                   selector:@selector(fetchBikesAndupdateAllAnnotations)
+                                   userInfo:nil
+                                    repeats:YES];
     
 }
 
