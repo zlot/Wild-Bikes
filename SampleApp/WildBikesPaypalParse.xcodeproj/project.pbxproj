@@ -37,6 +37,13 @@
 		849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74B16D443EC00E03EEC /* button_secondary_selected@2x.png */; };
 		849BE75016D443EC00E03EEC /* button_secondary.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74C16D443EC00E03EEC /* button_secondary.png */; };
 		849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74D16D443EC00E03EEC /* button_secondary@2x.png */; };
+		C92E2DD519840686007CB709 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
+		C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD71984080A007CB709 /* BikePhoto.png */; };
+		C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD81984080A007CB709 /* BikePhoto@2x.png */; };
+		C92E2DDD1984080A007CB709 /* RideThisBikeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD91984080A007CB709 /* RideThisBikeBtn.png */; };
+		C92E2DDE1984080A007CB709 /* RideThisBikeBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DDA1984080A007CB709 /* RideThisBikeBtn@2x.png */; };
+		C92E2DE119840BE9007CB709 /* Helmet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DDF19840BE9007CB709 /* Helmet@2x.png */; };
+		C92E2DE419840D20007CB709 /* Helmet.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DE319840D20007CB709 /* Helmet.png */; };
 		C98D299A1983D59000F24042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D29991983D59000F24042 /* CFNetwork.framework */; };
 		C98D299C1983D5AB00F24042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299B1983D5AB00F24042 /* libz.dylib */; };
 		C98D299E1983D5B900F24042 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299D1983D5B900F24042 /* StoreKit.framework */; };
@@ -45,7 +52,6 @@
 		C9AA606F1983D707000A48BC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA606E1983D707000A48BC /* FacebookSDK.framework */; };
 		C9AA60711983D71E000A48BC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60701983D71E000A48BC /* Parse.framework */; };
 		C9AA60731983D74B000A48BC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60721983D74B000A48BC /* Accounts.framework */; };
-		C9CD62861983E0EC0028B08C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
 		C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CD628A1983E1D50028B08C /* MapViewController.m */; };
 		C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D1A52A1983E37D002512BD /* myAnnotation.m */; };
 		D5463464178F5A2800A2D5F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */; };
@@ -91,6 +97,12 @@
 		849BE74B16D443EC00E03EEC /* button_secondary_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary_selected@2x.png"; sourceTree = "<group>"; };
 		849BE74C16D443EC00E03EEC /* button_secondary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary.png; sourceTree = "<group>"; };
 		849BE74D16D443EC00E03EEC /* button_secondary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary@2x.png"; sourceTree = "<group>"; };
+		C92E2DD71984080A007CB709 /* BikePhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BikePhoto.png; sourceTree = "<group>"; };
+		C92E2DD81984080A007CB709 /* BikePhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikePhoto@2x.png"; sourceTree = "<group>"; };
+		C92E2DD91984080A007CB709 /* RideThisBikeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RideThisBikeBtn.png; sourceTree = "<group>"; };
+		C92E2DDA1984080A007CB709 /* RideThisBikeBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RideThisBikeBtn@2x.png"; sourceTree = "<group>"; };
+		C92E2DDF19840BE9007CB709 /* Helmet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Helmet@2x.png"; sourceTree = "<group>"; };
+		C92E2DE319840D20007CB709 /* Helmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Helmet.png; sourceTree = "<group>"; };
 		C98D29991983D59000F24042 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C98D299B1983D5AB00F24042 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C98D299D1983D5B900F24042 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -116,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92E2DD519840686007CB709 /* MapKit.framework in Frameworks */,
 				C9AA60731983D74B000A48BC /* Accounts.framework in Frameworks */,
 				D5709F301884CDBF00CCD3CA /* CoreLocation.framework in Frameworks */,
 				C98D299E1983D5B900F24042 /* StoreKit.framework in Frameworks */,
@@ -126,7 +139,6 @@
 				C9AA60711983D71E000A48BC /* Parse.framework in Frameworks */,
 				849BE6EC16D4352100E03EEC /* UIKit.framework in Frameworks */,
 				849BE6EE16D4352100E03EEC /* Foundation.framework in Frameworks */,
-				C9CD62861983E0EC0028B08C /* MapKit.framework in Frameworks */,
 				849BE6F016D4352100E03EEC /* CoreGraphics.framework in Frameworks */,
 				849BE72A16D4401C00E03EEC /* libPayPalMobile.a in Frameworks */,
 				849BE74116D440D700E03EEC /* CoreMedia.framework in Frameworks */,
@@ -149,6 +161,7 @@
 		849BE6DF16D4352000E03EEC = {
 			isa = PBXGroup;
 			children = (
+				C92E2DD6198407FF007CB709 /* Assets */,
 				849BE72B16D4402000E03EEC /* PayPalMobile */,
 				849BE6F116D4352100E03EEC /* WildBikes */,
 				849BE6EA16D4352100E03EEC /* Frameworks */,
@@ -257,6 +270,19 @@
 			name = PayPalMobile;
 			sourceTree = "<group>";
 		};
+		C92E2DD6198407FF007CB709 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C92E2DE319840D20007CB709 /* Helmet.png */,
+				C92E2DDF19840BE9007CB709 /* Helmet@2x.png */,
+				C92E2DD71984080A007CB709 /* BikePhoto.png */,
+				C92E2DD81984080A007CB709 /* BikePhoto@2x.png */,
+				C92E2DD91984080A007CB709 /* RideThisBikeBtn.png */,
+				C92E2DDA1984080A007CB709 /* RideThisBikeBtn@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,17 +345,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92E2DE119840BE9007CB709 /* Helmet@2x.png in Resources */,
+				C92E2DE419840D20007CB709 /* Helmet.png in Resources */,
 				849BE6F616D4352100E03EEC /* InfoPlist.strings in Resources */,
+				C92E2DDD1984080A007CB709 /* RideThisBikeBtn.png in Resources */,
 				849BE6FE16D4352100E03EEC /* Default.png in Resources */,
 				849BE70016D4352100E03EEC /* Default@2x.png in Resources */,
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
+				C92E2DDE1984080A007CB709 /* RideThisBikeBtn@2x.png in Resources */,
 				849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */,
 				849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */,
 				849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */,
+				C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */,
 				849BE74E16D443EC00E03EEC /* button_secondary_selected.png in Resources */,
 				849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */,
 				849BE75016D443EC00E03EEC /* button_secondary.png in Resources */,
 				849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */,
+				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,
 				2D48B18616EE8F0800C83CD2 /* check.png in Resources */,
 				2D48B18716EE8F0800C83CD2 /* check@2x.png in Resources */,
 			);
