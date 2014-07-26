@@ -19,7 +19,6 @@
 		849BE70016D4352100E03EEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE6FF16D4352100E03EEC /* Default@2x.png */; };
 		849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE70116D4352100E03EEC /* Default-568h@2x.png */; };
 		849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */; };
-		849BE70816D4352100E03EEC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BE70616D4352100E03EEC /* MainStoryboard_iPad.storyboard */; };
 		849BE70B16D4352100E03EEC /* ZZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE70A16D4352100E03EEC /* ZZMainViewController.m */; };
 		849BE70E16D4352100E03EEC /* ZZFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BE70D16D4352100E03EEC /* ZZFlipsideViewController.m */; };
 		849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE72216D43F5E00E03EEC /* ios_sample_icon.png */; };
@@ -60,7 +59,6 @@
 		849BE6FF16D4352100E03EEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		849BE70116D4352100E03EEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		849BE70416D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		849BE70716D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		849BE70916D4352100E03EEC /* ZZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZMainViewController.h; sourceTree = "<group>"; };
 		849BE70A16D4352100E03EEC /* ZZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZMainViewController.m; sourceTree = "<group>"; };
 		849BE70C16D4352100E03EEC /* ZZFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZFlipsideViewController.h; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 				849BE6FA16D4352100E03EEC /* ZZAppDelegate.h */,
 				849BE6FB16D4352100E03EEC /* ZZAppDelegate.m */,
 				849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */,
-				849BE70616D4352100E03EEC /* MainStoryboard_iPad.storyboard */,
 				849BE70916D4352100E03EEC /* ZZMainViewController.h */,
 				849BE70A16D4352100E03EEC /* ZZMainViewController.m */,
 				849BE70C16D4352100E03EEC /* ZZFlipsideViewController.h */,
@@ -272,7 +269,6 @@
 				849BE70016D4352100E03EEC /* Default@2x.png in Resources */,
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
 				849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */,
-				849BE70816D4352100E03EEC /* MainStoryboard_iPad.storyboard in Resources */,
 				849BE72316D43F5E00E03EEC /* ios_sample_icon.png in Resources */,
 				849BE72516D43F7F00E03EEC /* ios_sample_icon@2x.png in Resources */,
 				849BE74E16D443EC00E03EEC /* button_secondary_selected.png in Resources */,
@@ -315,14 +311,6 @@
 				849BE70416D4352100E03EEC /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		849BE70616D4352100E03EEC /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				849BE70716D4352100E03EEC /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -402,6 +390,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,6 +411,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
