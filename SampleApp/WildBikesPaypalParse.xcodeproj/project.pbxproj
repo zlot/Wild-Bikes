@@ -38,6 +38,7 @@
 		849BE75016D443EC00E03EEC /* button_secondary.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74C16D443EC00E03EEC /* button_secondary.png */; };
 		849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74D16D443EC00E03EEC /* button_secondary@2x.png */; };
 		AECF93721984331300A1B12D /* BikeMini-11.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF93711984331300A1B12D /* BikeMini-11.png */; };
+		AECF937519843D2E00A1B12D /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF937419843D2E00A1B12D /* Bicycle.m */; };
 		C92E2DD519840686007CB709 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
 		C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD71984080A007CB709 /* BikePhoto.png */; };
 		C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD81984080A007CB709 /* BikePhoto@2x.png */; };
@@ -55,7 +56,7 @@
 		C9AA60711983D71E000A48BC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60701983D71E000A48BC /* Parse.framework */; };
 		C9AA60731983D74B000A48BC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AA60721983D74B000A48BC /* Accounts.framework */; };
 		C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CD628A1983E1D50028B08C /* MapViewController.m */; };
-		C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D1A52A1983E37D002512BD /* myAnnotation.m */; };
+		C9D1A52B1983E37D002512BD /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D1A52A1983E37D002512BD /* MyAnnotation.m */; };
 		C9E7F17F198423F8008F1E6F /* PixelBike.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F17D198423F8008F1E6F /* PixelBike.png */; };
 		C9E7F180198423F8008F1E6F /* PixelBike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F17E198423F8008F1E6F /* PixelBike@2x.png */; };
 		C9E7F182198424C7008F1E6F /* CancelBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E7F181198424C7008F1E6F /* CancelBtn@2x.png */; };
@@ -104,6 +105,8 @@
 		849BE74C16D443EC00E03EEC /* button_secondary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary.png; sourceTree = "<group>"; };
 		849BE74D16D443EC00E03EEC /* button_secondary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary@2x.png"; sourceTree = "<group>"; };
 		AECF93711984331300A1B12D /* BikeMini-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikeMini-11.png"; sourceTree = "<group>"; };
+		AECF937319843D2E00A1B12D /* Bicycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
+		AECF937419843D2E00A1B12D /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
 		C92E2DD71984080A007CB709 /* BikePhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BikePhoto.png; sourceTree = "<group>"; };
 		C92E2DD81984080A007CB709 /* BikePhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikePhoto@2x.png"; sourceTree = "<group>"; };
 		C92E2DD91984080A007CB709 /* RideThisBikeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RideThisBikeBtn.png; sourceTree = "<group>"; };
@@ -125,8 +128,8 @@
 		C9CD62871983E1070028B08C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C9CD62891983E1D50028B08C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		C9CD628A1983E1D50028B08C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		C9D1A5291983E37D002512BD /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
-		C9D1A52A1983E37D002512BD /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
+		C9D1A5291983E37D002512BD /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		C9D1A52A1983E37D002512BD /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 		C9E7F17D198423F8008F1E6F /* PixelBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PixelBike.png; sourceTree = "<group>"; };
 		C9E7F17E198423F8008F1E6F /* PixelBike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PixelBike@2x.png"; sourceTree = "<group>"; };
 		C9E7F181198424C7008F1E6F /* CancelBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CancelBtn@2x.png"; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 			children = (
 				C9CD62891983E1D50028B08C /* MapViewController.h */,
 				C9CD628A1983E1D50028B08C /* MapViewController.m */,
+				AECF937319843D2E00A1B12D /* Bicycle.h */,
+				AECF937419843D2E00A1B12D /* Bicycle.m */,
 				849BE6FA16D4352100E03EEC /* AppDelegate.h */,
 				849BE6FB16D4352100E03EEC /* AppDelegate.m */,
 				849BE70316D4352100E03EEC /* MainStoryboard_iPhone.storyboard */,
@@ -233,8 +238,8 @@
 				849BE70A16D4352100E03EEC /* MainViewController.m */,
 				C98D9E231983E33500C8C102 /* BikeDetailViewController.h */,
 				C98D9E241983E33500C8C102 /* BikeDetailViewController.m */,
-				C9D1A5291983E37D002512BD /* myAnnotation.h */,
-				C9D1A52A1983E37D002512BD /* myAnnotation.m */,
+				C9D1A5291983E37D002512BD /* MyAnnotation.h */,
+				C9D1A52A1983E37D002512BD /* MyAnnotation.m */,
 				C936E8E4198422550066DED0 /* RidingModeViewController.h */,
 				C936E8E5198422550066DED0 /* RidingModeViewController.m */,
 				849BE6F216D4352100E03EEC /* Supporting Files */,
@@ -288,7 +293,7 @@
 		C92E2DD6198407FF007CB709 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				AECF93711984331300A1B12D /* BikeMini-11.png */,				
+				AECF93711984331300A1B12D /* BikeMini-11.png */,
 				C9E7F183198424CE008F1E6F /* CancelBtn.png */,
 				C9E7F181198424C7008F1E6F /* CancelBtn@2x.png */,
 				C9E7F17D198423F8008F1E6F /* PixelBike.png */,
@@ -403,9 +408,10 @@
 				849BE6F816D4352100E03EEC /* main.m in Sources */,
 				849BE6FC16D4352100E03EEC /* AppDelegate.m in Sources */,
 				C9CD628B1983E1D50028B08C /* MapViewController.m in Sources */,
-				C9D1A52B1983E37D002512BD /* myAnnotation.m in Sources */,
+				C9D1A52B1983E37D002512BD /* MyAnnotation.m in Sources */,
 				849BE70B16D4352100E03EEC /* MainViewController.m in Sources */,
 				C936E8E6198422550066DED0 /* RidingModeViewController.m in Sources */,
+				AECF937519843D2E00A1B12D /* Bicycle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

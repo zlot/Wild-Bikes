@@ -10,9 +10,11 @@
 
 #import <Parse/Parse.h>
 
-#import "myAnnotation.h"
+#import "MyAnnotation.h"
 
 #import "BikeDetailViewController.h"
+
+#import "Bicycle.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -26,12 +28,16 @@
 {
     [super viewDidLoad];
     
+    // LOCAL VARS
+    bikes = [[NSMutableArray alloc] init];
+    
     // MAP
     // Set the mapView delegate to this View Controller
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
 
-    [self updateAllAnnotations];
+    // UPDATES
+    [self fetchBikesAndupdateAllAnnotations];
     
 }
 
@@ -95,18 +101,24 @@
     {
         BikeDetailViewController *destinationViewController = segue.destinationViewController;
         
-        myAnnotation *annotation = (myAnnotation *) sender.annotation;
+        MyAnnotation *annotation = (MyAnnotation *) sender.annotation;
         
-        destinationViewController.uiNavigationItem.title = [annotation title];
+//        destinationViewController.uiNavigationItem.title = [annotation title];
         
+        destinationViewController.bike = [annotation bike];
         
     } else {
         NSLog(@"PFS:something else");
     }
 }
 
-- (void) updateAllAnnotations
+// DATA
+
+- (void) fetchBikesAndupdateAllAnnotations
 {
+    //reset bikes
+    bikes = [[NSMutableArray alloc] init];
+    
     // remove all annotations (for now)
     [self.mapView removeAnnotations:[self.mapView annotations]];
     
@@ -117,22 +129,29 @@
             // The find succeeded. The first 100 objects are available in objects
             for (PFObject *object in objects) {
                 
+                // Create Coordinate
                 PFGeoPoint *point = object[@"location"];
                 CLLocationCoordinate2D coordinate;
-                
                 coordinate.latitude = point.latitude;
                 coordinate.longitude = point.longitude;
                 
-                myAnnotation *annotation;
+                // Create Bike of Bikes
+                Bicycle *bike = [[Bicycle alloc] init];
+                bike.name = object[@"name"];
+                bike.isAvailable = [NSNumber numberWithBool:[object[@"isAvailable"] boolValue]];
+                bike.latitude = [NSNumber numberWithDouble:point.latitude];
+                bike.longitude = [NSNumber numberWithDouble:point.longitude];
+                [bikes addObject:bike];
                 
+                // Create Annotation - Title Text
                 NSString *text = @"In Use";
                 if ([object[@"isAvailable"] boolValue] == YES) {
                     text = @"Available";
                 }
-
-                annotation = [[myAnnotation alloc] initWithCoordinate:coordinate title:text];
+                // Create Annotation
+                MyAnnotation *annotation;
+                annotation = [[MyAnnotation alloc] initWithCoordinate:coordinate title:text bike:bike];
                 [self.mapView addAnnotation:annotation];
-//                NSLog(@"%@", object[@"name"]);
             }
         } else {
             // Log details of the failure

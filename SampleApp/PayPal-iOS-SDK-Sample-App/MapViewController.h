@@ -10,7 +10,9 @@
 #import <MapKit/MapKit.h>
 
 @interface MapViewController : UIViewController <MKMapViewDelegate>
-
+{
+    NSMutableArray *bikes;
+}
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

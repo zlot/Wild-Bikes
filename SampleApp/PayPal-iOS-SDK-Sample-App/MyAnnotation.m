@@ -6,14 +6,23 @@
 //  Copyright (c) 2014 Hanley Weng. All rights reserved.
 //
 
-#import "myAnnotation.h"
+#import "MyAnnotation.h"
 
-@implementation myAnnotation
+@implementation MyAnnotation
 
 - (id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title {
     if ((self = [super init])) {
         self.coordinate = coordinate;
         self.title = title;
+    }
+    return self;
+}
+
+- (id) initWithCoordinate:(CLLocationCoordinate2D) coordinate title:(NSString *)title bike:(Bicycle *)bike {
+    if ((self = [super init])) {
+        self.coordinate = coordinate;
+        self.title = title;
+        self.bike = bike;
     }
     return self;
 }

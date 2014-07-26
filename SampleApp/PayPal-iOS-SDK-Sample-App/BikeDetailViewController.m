@@ -12,7 +12,10 @@
 
 - (void)viewDidLoad
 {
-//    self.uiNavigationItem.title = @"Dragon";
+    self.uiNavigationItem.title = @"Dragon";
+    
+    NSString *bikeName = _bike.name;
+    self.uiNavigationItem.title = bikeName;
 }
 
 

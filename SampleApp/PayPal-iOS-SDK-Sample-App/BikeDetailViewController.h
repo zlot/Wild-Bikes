@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Bicycle.h"
+
 @interface BikeDetailViewController : UIViewController
+
+@property (nonatomic, retain) Bicycle *bike;
 
 @property (strong, nonatomic) IBOutlet UINavigationItem *uiNavigationItem;
 
