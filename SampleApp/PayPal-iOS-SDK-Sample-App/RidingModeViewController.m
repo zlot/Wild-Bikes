@@ -7,6 +7,7 @@
 //
 
 #import "RidingModeViewController.h"
+#import "ReturnedBikeViewController.h"
 
 @interface RidingModeViewController ()
 
@@ -19,6 +20,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // set bike name
+    NSString *myBikeName = _bike.name;
+    self.bikeName.text = myBikeName;
 }
 
 
@@ -28,6 +33,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"RidingToDonation"])
+    {
+        ReturnedBikeViewController *destinationViewController = segue.destinationViewController;
+        destinationViewController.bike = self.bike;
+    } else {
+        NSLog(@"PFS:something else");
+    }
 }
 
 

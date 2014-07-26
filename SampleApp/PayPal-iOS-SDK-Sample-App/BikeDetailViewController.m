@@ -8,15 +8,29 @@
 
 #import "BikeDetailViewController.h"
 
+#import "RidingModeViewController.h"
+
 @implementation BikeDetailViewController
 
 - (void)viewDidLoad
 {
-    self.uiNavigationItem.title = @"Dragon";
+    // set bike name
+    NSString *myBikeName = _bike.name;
+    self.bikeName.text = myBikeName;
     
-    NSString *bikeName = _bike.name;
-    self.uiNavigationItem.title = bikeName;
+    // set title
+    self.uiNavigationItem.title = myBikeName;
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"BikeToRiding"])
+    {
+        RidingModeViewController *destinationViewController = segue.destinationViewController;
+        destinationViewController.bike = self.bike;
+    } else {
+        NSLog(@"PFS:something else");
+    }
+}
 
 @end

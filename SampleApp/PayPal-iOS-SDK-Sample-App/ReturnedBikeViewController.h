@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "PayPalMobile.h"
 
+#import "Bicycle.h"
+
 @interface ReturnedBikeViewController : UIViewController <PayPalPaymentDelegate, UIPopoverControllerDelegate>
 
+@property (nonatomic, retain) Bicycle *bike;
 
 @property (weak, nonatomic) IBOutlet UILabel *bikeName;
 
