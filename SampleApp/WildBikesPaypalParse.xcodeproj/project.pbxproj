@@ -37,6 +37,7 @@
 		849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74B16D443EC00E03EEC /* button_secondary_selected@2x.png */; };
 		849BE75016D443EC00E03EEC /* button_secondary.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74C16D443EC00E03EEC /* button_secondary.png */; };
 		849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849BE74D16D443EC00E03EEC /* button_secondary@2x.png */; };
+		AECF93721984331300A1B12D /* BikeMini-11.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF93711984331300A1B12D /* BikeMini-11.png */; };
 		C92E2DD519840686007CB709 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
 		C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD71984080A007CB709 /* BikePhoto.png */; };
 		C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C92E2DD81984080A007CB709 /* BikePhoto@2x.png */; };
@@ -97,6 +98,7 @@
 		849BE74B16D443EC00E03EEC /* button_secondary_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary_selected@2x.png"; sourceTree = "<group>"; };
 		849BE74C16D443EC00E03EEC /* button_secondary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary.png; sourceTree = "<group>"; };
 		849BE74D16D443EC00E03EEC /* button_secondary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary@2x.png"; sourceTree = "<group>"; };
+		AECF93711984331300A1B12D /* BikeMini-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikeMini-11.png"; sourceTree = "<group>"; };
 		C92E2DD71984080A007CB709 /* BikePhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BikePhoto.png; sourceTree = "<group>"; };
 		C92E2DD81984080A007CB709 /* BikePhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikePhoto@2x.png"; sourceTree = "<group>"; };
 		C92E2DD91984080A007CB709 /* RideThisBikeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RideThisBikeBtn.png; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		C92E2DD6198407FF007CB709 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AECF93711984331300A1B12D /* BikeMini-11.png */,
 				C92E2DE319840D20007CB709 /* Helmet.png */,
 				C92E2DDF19840BE9007CB709 /* Helmet@2x.png */,
 				C92E2DD71984080A007CB709 /* BikePhoto.png */,
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92E2DE119840BE9007CB709 /* Helmet@2x.png in Resources */,
+				AECF93721984331300A1B12D /* BikeMini-11.png in Resources */,
 				C92E2DE419840D20007CB709 /* Helmet.png in Resources */,
 				849BE6F616D4352100E03EEC /* InfoPlist.strings in Resources */,
 				C92E2DDD1984080A007CB709 /* RideThisBikeBtn.png in Resources */,
