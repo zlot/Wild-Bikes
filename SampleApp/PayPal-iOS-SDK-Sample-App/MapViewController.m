@@ -28,6 +28,8 @@
     
     self.mapView.showsUserLocation = YES;
 
+    
+    
     // Set some coordinates
     CLLocationCoordinate2D coordinate1;
     coordinate1.latitude = -33.877212;
