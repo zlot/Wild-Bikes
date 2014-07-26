@@ -370,10 +370,17 @@
                                     <action selector="payWithDonationAmount:" destination="ibA-2t-RXh" eventType="touchUpInside" id="wbC-Ew-Ide"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="8" minimumFontSize="17" id="ifH-QQ-rwy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" id="ifH-QQ-rwy">
                                 <rect key="frame" x="47" y="507" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="5">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="textFieldDidBeginEditing:" destination="ibA-2t-RXh" eventType="editingDidBegin" id="dKb-qS-3EK"/>
@@ -388,16 +395,17 @@
                         <outlet property="donationAmount" destination="ifH-QQ-rwy" id="gFM-Z3-N9s"/>
                         <outlet property="payNowButton" destination="bmC-kj-ofz" id="CC7-m0-2Vy"/>
                         <outlet property="successView" destination="5sR-3D-6vS" id="3Zt-2g-NQf"/>
+                        <segue destination="r77-0m-z6W" kind="push" identifier="PaypalPaymentToThankYouSegue" id="xZd-lV-pqm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crG-6q-KCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584" y="179"/>
         </scene>
-        <!--View Controller-->
+        <!--Thank You View Controller-->
         <scene sceneID="MNA-uP-tY1">
             <objects>
-                <viewController id="r77-0m-z6W" sceneMemberID="viewController">
+                <viewController id="r77-0m-z6W" customClass="ThankYouViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K5h-9r-2hG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -438,16 +446,18 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="backToHome:" destination="r77-0m-z6W" eventType="touchUpInside" id="s0y-bB-UNi"/>
                                     <action selector="pay:" destination="ibA-2t-RXh" eventType="touchUpInside" id="dcP-5a-hd6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jRd-4Q-d3h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghL-rp-XW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1951" y="179"/>
+            <point key="canvasLocation" x="2062" y="173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h9B-Xw-xdJ">

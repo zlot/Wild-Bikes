@@ -246,10 +246,6 @@
     payment.paymentDetails = nil;
     
     if (!payment.processable) {
-        // This particular payment will always be processable. If, for
-        // example, the amount was negative or the shortDescription was
-        // empty, this payment wouldn't be processable, and you'd want
-        // to handle that here.
     }
     
     // Update payPalConfig re accepting credit cards.
@@ -299,13 +295,16 @@
 #pragma mark Helpers
 
 - (void)showSuccess {
-    self.successView.hidden = NO;
-    self.successView.alpha = 1.0f;
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationDelay:2.0];
-    self.successView.alpha = 0.0f;
-    [UIView commitAnimations];
+    
+    [self performSegueWithIdentifier:@"PaypalPaymentToThankYouSegue" sender:self];
+//    
+//    self.successView.hidden = NO;
+//    self.successView.alpha = 1.0f;
+//    [UIView beginAnimations:nil context:NULL];
+//    [UIView setAnimationDuration:0.5];
+//    [UIView setAnimationDelay:2.0];
+//    self.successView.alpha = 0.0f;
+//    [UIView commitAnimations];
 }
 
 
