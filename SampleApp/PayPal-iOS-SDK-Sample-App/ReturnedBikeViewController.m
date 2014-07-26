@@ -43,8 +43,11 @@
     // use default environment, should be Production in real life
     self.environment = kPayPalEnvironment;
     
-    
     self.donationAmount.keyboardType = UIKeyboardTypeNumberPad;
+    
+    // set bike name
+    NSString *myBikeName = _bike.name;
+    self.bikeName.text = myBikeName;
 }
 
 
