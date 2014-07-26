@@ -25,7 +25,7 @@
     
     [self.bikeImage setImage:[UIImage imageNamed: [myBikeName stringByAppendingString:@".png"]]];
     
-    if(_bike.hasHelmet == 1) {
+    if([_bike.hasHelmet intValue] == 1) {
         [self.helmetImage setImage:[UIImage imageNamed: @"Helmet.png"]];
     }
     
@@ -35,6 +35,13 @@
         
     NSString *appendedText = [@"Released into the wild by " stringByAppendingString:_bike.originalOwnerName];
     self.releasedText.text = appendedText;
+    
+    // LOAD LOCATION - INIT
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager startUpdatingLocation];
 
 }
 
@@ -46,6 +53,26 @@
         destinationViewController.bike = self.bike;
     } else {
         NSLog(@"PFS:something else");
+    }
+}
+
+// LOCATION FUNCTIONS
+// callback
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+//    NSLog(@"OldLocation %f %f", oldLocation.coordinate.latitude, oldLocation.coordinate.longitude);
+//    NSLog(@"NewLocation %f %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
+    
+    // Calculate distance between coordinates
+    CLLocation *bikeLocation = [[CLLocation alloc] initWithLatitude:[_bike.latitude doubleValue] longitude:[_bike.longitude doubleValue]];
+    
+    CLLocationDistance distance = [bikeLocation distanceFromLocation:newLocation];
+    int distanceMetres = distance;
+    if (distanceMetres > 70) {
+        NSString *text = [ NSString stringWithFormat:@"You are %d metres away! Come closer.", distanceMetres];
+        NSLog(@"%@", text);
+    } else {
+        NSLog(@"Good to go! %d", distanceMetres);
     }
 }
 
