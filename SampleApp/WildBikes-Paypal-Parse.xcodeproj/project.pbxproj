@@ -51,14 +51,14 @@
 /* Begin PBXFileReference section */
 		2D48B18416EE8F0800C83CD2 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		2D48B18516EE8F0800C83CD2 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
-		849BE6E816D4352100E03EEC /* PayPal-iOS-SDK-Sample-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PayPal-iOS-SDK-Sample-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		849BE6E816D4352100E03EEC /* WildBikes-Paypal-Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WildBikes-Paypal-Parse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849BE6EB16D4352100E03EEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		849BE6ED16D4352100E03EEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		849BE6EF16D4352100E03EEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		849BE6F316D4352100E03EEC /* PayPal-iOS-SDK-Sample-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PayPal-iOS-SDK-Sample-App-Info.plist"; sourceTree = "<group>"; };
+		849BE6F316D4352100E03EEC /* WildBikes-Paypal-Parse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WildBikes-Paypal-Parse-Info.plist"; sourceTree = "<group>"; };
 		849BE6F516D4352100E03EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		849BE6F716D4352100E03EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		849BE6F916D4352100E03EEC /* PayPal-iOS-SDK-Sample-App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PayPal-iOS-SDK-Sample-App-Prefix.pch"; sourceTree = "<group>"; };
+		849BE6F916D4352100E03EEC /* WildBikes-Paypal-Parse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WildBikes-Paypal-Parse-Prefix.pch"; sourceTree = "<group>"; };
 		849BE6FA16D4352100E03EEC /* ZZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAppDelegate.h; sourceTree = "<group>"; };
 		849BE6FB16D4352100E03EEC /* ZZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAppDelegate.m; sourceTree = "<group>"; };
 		849BE6FD16D4352100E03EEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		849BE6E916D4352100E03EEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				849BE6E816D4352100E03EEC /* PayPal-iOS-SDK-Sample-App.app */,
+				849BE6E816D4352100E03EEC /* WildBikes-Paypal-Parse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,10 +196,10 @@
 		849BE6F216D4352100E03EEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				849BE6F316D4352100E03EEC /* PayPal-iOS-SDK-Sample-App-Info.plist */,
+				849BE6F316D4352100E03EEC /* WildBikes-Paypal-Parse-Info.plist */,
 				849BE6F416D4352100E03EEC /* InfoPlist.strings */,
 				849BE6F716D4352100E03EEC /* main.m */,
-				849BE6F916D4352100E03EEC /* PayPal-iOS-SDK-Sample-App-Prefix.pch */,
+				849BE6F916D4352100E03EEC /* WildBikes-Paypal-Parse-Prefix.pch */,
 				849BE6FD16D4352100E03EEC /* Default.png */,
 				849BE6FF16D4352100E03EEC /* Default@2x.png */,
 				849BE70116D4352100E03EEC /* Default-568h@2x.png */,
@@ -238,9 +238,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		849BE6E716D4352100E03EEC /* PayPal-iOS-SDK-Sample-App */ = {
+		849BE6E716D4352100E03EEC /* WildBikes-Paypal-Parse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "PayPal-iOS-SDK-Sample-App" */;
+			buildConfigurationList = 849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "WildBikes-Paypal-Parse" */;
 			buildPhases = (
 				849BE6E416D4352100E03EEC /* Sources */,
 				849BE6E516D4352100E03EEC /* Frameworks */,
@@ -250,9 +250,9 @@
 			);
 			dependencies = (
 			);
-			name = "PayPal-iOS-SDK-Sample-App";
+			name = "WildBikes-Paypal-Parse";
 			productName = "PayPal-iOS-SDK-Sample-App";
-			productReference = 849BE6E816D4352100E03EEC /* PayPal-iOS-SDK-Sample-App.app */;
+			productReference = 849BE6E816D4352100E03EEC /* WildBikes-Paypal-Parse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +265,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = PayPal;
 			};
-			buildConfigurationList = 849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "PayPal-iOS-SDK-Sample-App" */;
+			buildConfigurationList = 849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "WildBikes-Paypal-Parse" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -277,7 +277,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				849BE6E716D4352100E03EEC /* PayPal-iOS-SDK-Sample-App */,
+				849BE6E716D4352100E03EEC /* WildBikes-Paypal-Parse */,
 			);
 		};
 /* End PBXProject section */
@@ -404,8 +404,8 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/PayPal-iOS-SDK-Sample-App-Prefix.pch";
-				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/PayPal-iOS-SDK-Sample-App-Info.plist";
+				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Prefix.pch";
+				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +415,7 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WildBikes-Paypal-Parse";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -429,8 +429,8 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/PayPal-iOS-SDK-Sample-App-Prefix.pch";
-				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/PayPal-iOS-SDK-Sample-App-Info.plist";
+				GCC_PREFIX_HEADER = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Prefix.pch";
+				INFOPLIST_FILE = "PayPal-iOS-SDK-Sample-App/WildBikes-Paypal-Parse-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,7 +440,7 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WildBikes-Paypal-Parse";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -449,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "PayPal-iOS-SDK-Sample-App" */ = {
+		849BE6E316D4352000E03EEC /* Build configuration list for PBXProject "WildBikes-Paypal-Parse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				849BE70F16D4352100E03EEC /* Debug */,
@@ -458,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "PayPal-iOS-SDK-Sample-App" */ = {
+		849BE71116D4352100E03EEC /* Build configuration list for PBXNativeTarget "WildBikes-Paypal-Parse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				849BE71216D4352100E03EEC /* Debug */,
