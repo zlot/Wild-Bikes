@@ -79,6 +79,8 @@
 		C9F1C5A0198458B700DA2F4A /* OkTakeTheMoneyBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C59F198458B700DA2F4A /* OkTakeTheMoneyBtn@2x.png */; };
 		C9F1C5A319845A7200DA2F4A /* Lock.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5A119845A7200DA2F4A /* Lock.png */; };
 		C9F1C5A419845A7200DA2F4A /* Lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5A219845A7200DA2F4A /* Lock@2x.png */; };
+		C9F1C5A719845C6800DA2F4A /* Black Rider_Owner.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5A519845C6800DA2F4A /* Black Rider_Owner.png */; };
+		C9F1C5A819845C6800DA2F4A /* Black Rider__Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F1C5A619845C6800DA2F4A /* Black Rider__Owner@2x.png */; };
 		D5463464178F5A2800A2D5F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */; };
 		D5709F301884CDBF00CCD3CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -172,6 +174,8 @@
 		C9F1C59F198458B700DA2F4A /* OkTakeTheMoneyBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OkTakeTheMoneyBtn@2x.png"; sourceTree = "<group>"; };
 		C9F1C5A119845A7200DA2F4A /* Lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lock.png; sourceTree = "<group>"; };
 		C9F1C5A219845A7200DA2F4A /* Lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lock@2x.png"; sourceTree = "<group>"; };
+		C9F1C5A519845C6800DA2F4A /* Black Rider_Owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Rider_Owner.png"; sourceTree = "<group>"; };
+		C9F1C5A619845C6800DA2F4A /* Black Rider__Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Rider__Owner@2x.png"; sourceTree = "<group>"; };
 		D540258117FCC65A001F1164 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = ../PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
 		D5463463178F5A2800A2D5F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5709F2F1884CDBF00CCD3CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -368,6 +372,8 @@
 		C9F1C598198453FB00DA2F4A /* bikeImages */ = {
 			isa = PBXGroup;
 			children = (
+				C9F1C5A519845C6800DA2F4A /* Black Rider_Owner.png */,
+				C9F1C5A619845C6800DA2F4A /* Black Rider__Owner@2x.png */,
 				C9F1C5991984544900DA2F4A /* Black Rider.png */,
 				C9F1C59A1984544900DA2F4A /* Black Rider@2x.png */,
 			);
@@ -464,9 +470,11 @@
 				C928124A19843EB700BA09F6 /* BackToHomeBtn.png in Resources */,
 				C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */,
 				849BE74E16D443EC00E03EEC /* button_secondary_selected.png in Resources */,
+				C9F1C5A719845C6800DA2F4A /* Black Rider_Owner.png in Resources */,
 				849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */,
 				849BE75016D443EC00E03EEC /* button_secondary.png in Resources */,
 				849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */,
+				C9F1C5A819845C6800DA2F4A /* Black Rider__Owner@2x.png in Resources */,
 				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,
 				2D48B18616EE8F0800C83CD2 /* check.png in Resources */,
 				C9DE7C6C1984330E00DABCDE /* Collect.png in Resources */,

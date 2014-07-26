@@ -26,4 +26,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *releasedText;
 
+@property (weak, nonatomic) IBOutlet UIImageView *bikeOwnerImage;
+
 @end
