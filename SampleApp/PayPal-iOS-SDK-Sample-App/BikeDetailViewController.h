@@ -30,4 +30,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *releasedText;
 
+@property (weak, nonatomic) IBOutlet UITextView *farText;
+
+@property (weak, nonatomic) IBOutlet UIButton *nearButton;
+
 @end

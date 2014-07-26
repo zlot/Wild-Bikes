@@ -65,10 +65,21 @@
     CLLocationDistance distance = [bikeLocation distanceFromLocation:newLocation];
     int distanceMetres = distance;
     if (distanceMetres > 70) {
-        NSString *text = [ NSString stringWithFormat:@"You are %d metres away! Come closer.", distanceMetres];
+        NSString *text = [ NSString stringWithFormat:@"You are %d m away! Come closer to ride.", distanceMetres];
         NSLog(@"%@", text);
+        
+        // FAR MODE
+        [_farText setAlpha:1];
+        [_nearButton setAlpha:0];
+        [_nearButton setUserInteractionEnabled:NO];
+        
     } else {
         NSLog(@"Good to go! %d", distanceMetres);
+        
+        // NEAR MODE
+        [_farText setAlpha:0];
+        [_nearButton setAlpha:1];
+        [_nearButton setUserInteractionEnabled:YES];
     }
 }
 
