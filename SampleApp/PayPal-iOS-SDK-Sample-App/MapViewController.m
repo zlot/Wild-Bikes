@@ -37,7 +37,9 @@
     self.mapView.showsUserLocation = YES;
 
     // UPDATES
-    [self fetchBikesAndupdateAllAnnotations];
+    // update repetetively
+    [self repeatingFetchBikesAndUpdateAllAnnotations];
+    
     
 }
 
@@ -121,6 +123,24 @@
 }
 
 // DATA
+- (void) repeatingFetchBikesAndUpdateAllAnnotations
+{
+    
+    float timeToWait = 2.0;
+    int totalBikesFetched = (int) bikes.count;
+    if (totalBikesFetched > 0) {
+        timeToWait = 20.0;
+    }
+    
+    [self fetchBikesAndupdateAllAnnotations];
+    
+    // Constantly call self.
+    [NSTimer scheduledTimerWithTimeInterval:timeToWait
+                                     target:self
+                                   selector:@selector(repeatingFetchBikesAndUpdateAllAnnotations)
+                                   userInfo:nil
+                                    repeats:NO];
+}
 
 - (void) fetchBikesAndupdateAllAnnotations
 {
@@ -146,7 +166,11 @@
                 // Create Bike of Bikes
                 Bicycle *bike = [[Bicycle alloc] init];
                 bike.name = object[@"name"];
+                bike.passcode = object[@"passcode"];
+                bike.originalOwnerName = object[@"originalOwnerName"];
+                bike.bikeDescription = object[@"bikeDescription"];
                 bike.isAvailable = [NSNumber numberWithBool:[object[@"isAvailable"] boolValue]];
+                bike.hasHelmet = [NSNumber numberWithBool:[object[@"hasHelmet"] boolValue]];
                 bike.latitude = [NSNumber numberWithDouble:point.latitude];
                 bike.longitude = [NSNumber numberWithDouble:point.longitude];
                 [bikes addObject:bike];
@@ -165,7 +189,7 @@
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
-        NSLog(@"--");
+        NSLog(@"--Fetched-Bikes--");
         
     }];
 }

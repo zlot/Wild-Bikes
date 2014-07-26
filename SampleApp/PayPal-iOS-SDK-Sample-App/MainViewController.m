@@ -19,7 +19,7 @@
     ///// PARSE DATA
 //    [self deleteAllBikes]; // NOT REQUIRED
 //    [self initializeNewBikes]; // ONLY REQUIRED TO RUN ONCE – AT INITIALIZE OF CLOUD-DB
-    [self printAllBikes];
+//    [self printAllBikes];
     
 }
 
@@ -98,6 +98,7 @@
     
     NSString *name;
     NSNumber *isAvailable;
+    NSNumber *hasHelmet;
     
     PFGeoPoint *point;
     
@@ -105,45 +106,70 @@
     name = @"Speedster";
     point = [PFGeoPoint geoPointWithLatitude:-33.877212 longitude:151.213796];
     isAvailable = @1;
+    hasHelmet = @0;
     bicycle[@"name"] = name;
     bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"hasHelmet"] = hasHelmet;
     bicycle[@"location"] = point;
+    bicycle[@"passcode"] = @"1322";
+    bicycle[@"originalOwnerName"] = @"Flash";
+    bicycle[@"bikeDescription"] = @"With 8 speeds to choose from, this valiant bike will blaze through the toughest of hills.";
     [bicycle save];
     
     bicycle = [PFObject objectWithClassName:@"Bicycle2"];
     name = @"Sally";
     point = [PFGeoPoint geoPointWithLatitude:-33.878610 longitude:151.215856];
     isAvailable = @1;
+    hasHelmet = @1;
     bicycle[@"name"] = name;
     bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"hasHelmet"] = hasHelmet;
     bicycle[@"location"] = point;
+    bicycle[@"passcode"] = @"4028";
+    bicycle[@"originalOwnerName"] = @"Clare";
+    bicycle[@"bikeDescription"] = @"This bike always makes for an enjoyable ride.";
     [bicycle save];
     
     bicycle = [PFObject objectWithClassName:@"Bicycle2"];
     name = @"Pikachu";
     point = [PFGeoPoint geoPointWithLatitude:-33.877255 longitude:151.216540];
     isAvailable = @0;
+    hasHelmet = @0;
     bicycle[@"name"] = name;
     bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"hasHelmet"] = hasHelmet;
     bicycle[@"location"] = point;
+    bicycle[@"passcode"] = @"7534";
+    bicycle[@"originalOwnerName"] = @"Ash";
+    bicycle[@"bikeDescription"] = @"An electric ride.";
     [bicycle save];
     
     bicycle = [PFObject objectWithClassName:@"Bicycle2"];
     name = @"Dragon";
     point = [PFGeoPoint geoPointWithLatitude:-33.877477 longitude:151.215682];
     isAvailable = @1;
+    hasHelmet = @1;
     bicycle[@"name"] = name;
     bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"hasHelmet"] = hasHelmet;
     bicycle[@"location"] = point;
+    bicycle[@"passcode"] = @"221";
+    bicycle[@"originalOwnerName"] = @"SwordSmith06";
+    bicycle[@"bikeDescription"] = @"Slay those rode demons.";
     [bicycle save];
     
     bicycle = [PFObject objectWithClassName:@"Bicycle2"];
     name = @"Black Rider";
     point = [PFGeoPoint geoPointWithLatitude:-33.875313 longitude:151.215145];
     isAvailable = @1;
+    hasHelmet = @1;
     bicycle[@"name"] = name;
     bicycle[@"isAvailable"] = isAvailable;
+    bicycle[@"hasHelmet"] = hasHelmet;
     bicycle[@"location"] = point;
+    bicycle[@"passcode"] = @"634";
+    bicycle[@"originalOwnerName"] = @"Alan T";
+    bicycle[@"bikeDescription"] = @"Smooth.";
     [bicycle save];
     
 }
