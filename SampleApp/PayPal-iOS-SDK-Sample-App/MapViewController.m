@@ -81,12 +81,12 @@
         //        annotationView.animatesDrop = YES;
         annotationView.canShowCallout = YES;
         
-        annotationView.image = [UIImage imageNamed:@"BikeMini-11.png"];
+        annotationView.image = [UIImage imageNamed:@"MiniBike2.png"];
         
         MyAnnotation *ann = (MyAnnotation *) annotation;
         Bicycle *bike = ann.bike;
         if ([bike.isAvailable boolValue] == NO) {
-            annotationView.image = [UIImage imageNamed:@"BikeMini-13.png"];
+            annotationView.image = [UIImage imageNamed:@"MiniBike3.png"];
         }
         
         
