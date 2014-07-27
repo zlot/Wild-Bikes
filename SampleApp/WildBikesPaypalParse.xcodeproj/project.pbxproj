@@ -72,6 +72,12 @@
 		C93A524019846FFD008CB124 /* Dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A523819846FFD008CB124 /* Dragon.png */; };
 		C93A5243198470D1008CB124 /* ImDoneRiding.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A5241198470D1008CB124 /* ImDoneRiding.png */; };
 		C93A5244198470D1008CB124 /* ImDoneRiding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A5242198470D1008CB124 /* ImDoneRiding@2x.png */; };
+		C93A5247198478F9008CB124 /* Pikachu_Owner.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A5245198478F9008CB124 /* Pikachu_Owner.png */; };
+		C93A5248198478F9008CB124 /* Pikachu_Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A5246198478F9008CB124 /* Pikachu_Owner@2x.png */; };
+		C93A524B19847907008CB124 /* Sally_Owner.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A524919847907008CB124 /* Sally_Owner.png */; };
+		C93A524C19847907008CB124 /* Sally_Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A524A19847907008CB124 /* Sally_Owner@2x.png */; };
+		C93A524F19847915008CB124 /* Dragon_Owner.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A524D19847915008CB124 /* Dragon_Owner.png */; };
+		C93A525019847915008CB124 /* Dragon_Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A524E19847915008CB124 /* Dragon_Owner@2x.png */; };
 		C98D299A1983D59000F24042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D29991983D59000F24042 /* CFNetwork.framework */; };
 		C98D299C1983D5AB00F24042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299B1983D5AB00F24042 /* libz.dylib */; };
 		C98D299E1983D5B900F24042 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299D1983D5B900F24042 /* StoreKit.framework */; };
@@ -182,6 +188,12 @@
 		C93A523819846FFD008CB124 /* Dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dragon.png; sourceTree = "<group>"; };
 		C93A5241198470D1008CB124 /* ImDoneRiding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImDoneRiding.png; sourceTree = "<group>"; };
 		C93A5242198470D1008CB124 /* ImDoneRiding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImDoneRiding@2x.png"; sourceTree = "<group>"; };
+		C93A5245198478F9008CB124 /* Pikachu_Owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pikachu_Owner.png; sourceTree = "<group>"; };
+		C93A5246198478F9008CB124 /* Pikachu_Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pikachu_Owner@2x.png"; sourceTree = "<group>"; };
+		C93A524919847907008CB124 /* Sally_Owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sally_Owner.png; sourceTree = "<group>"; };
+		C93A524A19847907008CB124 /* Sally_Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sally_Owner@2x.png"; sourceTree = "<group>"; };
+		C93A524D19847915008CB124 /* Dragon_Owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dragon_Owner.png; sourceTree = "<group>"; };
+		C93A524E19847915008CB124 /* Dragon_Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dragon_Owner@2x.png"; sourceTree = "<group>"; };
 		C98D29991983D59000F24042 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C98D299B1983D5AB00F24042 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C98D299D1983D5B900F24042 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -429,6 +441,12 @@
 		C9F1C598198453FB00DA2F4A /* bikeImages */ = {
 			isa = PBXGroup;
 			children = (
+				C93A524D19847915008CB124 /* Dragon_Owner.png */,
+				C93A524E19847915008CB124 /* Dragon_Owner@2x.png */,
+				C93A524919847907008CB124 /* Sally_Owner.png */,
+				C93A524A19847907008CB124 /* Sally_Owner@2x.png */,
+				C93A5245198478F9008CB124 /* Pikachu_Owner.png */,
+				C93A5246198478F9008CB124 /* Pikachu_Owner@2x.png */,
 				C93A523119846FFD008CB124 /* Speedster@2x.png */,
 				C93A523219846FFD008CB124 /* Speedster.png */,
 				C93A523319846FFD008CB124 /* Sally@2x.png */,
@@ -516,6 +534,7 @@
 				C93A523019846F98008CB124 /* DonateSmallBtn@2x.png in Resources */,
 				C9F1C59C1984544900DA2F4A /* Black Rider@2x.png in Resources */,
 				AE1687B019846A6A00F8C2F5 /* MiniBike2@2x.png in Resources */,
+				C93A525019847915008CB124 /* Dragon_Owner@2x.png in Resources */,
 				C9F1C5A0198458B700DA2F4A /* OkTakeTheMoneyBtn@2x.png in Resources */,
 				C92E2DDD1984080A007CB709 /* RideThisBikeBtn.png in Resources */,
 				849BE6FE16D4352100E03EEC /* Default.png in Resources */,
@@ -524,11 +543,13 @@
 				849BE70216D4352100E03EEC /* Default-568h@2x.png in Resources */,
 				C92E2DDE1984080A007CB709 /* RideThisBikeBtn@2x.png in Resources */,
 				C93A524019846FFD008CB124 /* Dragon.png in Resources */,
+				C93A524F19847915008CB124 /* Dragon_Owner.png in Resources */,
 				C93A522C19846976008CB124 /* LightRectangleSmall@2x.png in Resources */,
 				C9DE7C691984327700DABCDE /* LightRectangleLarge@2x.png in Resources */,
 				849BE70516D4352100E03EEC /* MainStoryboard_iPhone.storyboard in Resources */,
 				C93A5243198470D1008CB124 /* ImDoneRiding.png in Resources */,
 				C9E7F17F198423F8008F1E6F /* PixelBike.png in Resources */,
+				C93A524C19847907008CB124 /* Sally_Owner@2x.png in Resources */,
 				C93A523D19846FFD008CB124 /* Pikachu@2x.png in Resources */,
 				C93A523919846FFD008CB124 /* Speedster@2x.png in Resources */,
 				C9DE7C701984345200DABCDE /* Donate15.png in Resources */,
@@ -539,6 +560,7 @@
 				C93A523B19846FFD008CB124 /* Sally@2x.png in Resources */,
 				AECF937C1984495800A1B12D /* BikeMini-13.png in Resources */,
 				C9F1C59E198458AE00DA2F4A /* OkTakeTheMoneyBtn.png in Resources */,
+				C93A5248198478F9008CB124 /* Pikachu_Owner@2x.png in Resources */,
 				C9DE7C711984345200DABCDE /* Donate15@2x.png in Resources */,
 				C9F1C5A319845A7200DA2F4A /* Lock.png in Resources */,
 				AE1687AF19846A6A00F8C2F5 /* MiniBike3@2x.png in Resources */,
@@ -560,6 +582,7 @@
 				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,
 				2D48B18616EE8F0800C83CD2 /* check.png in Resources */,
 				AE1687B119846A6A00F8C2F5 /* MiniBike1@2x.png in Resources */,
+				C93A524B19847907008CB124 /* Sally_Owner.png in Resources */,
 				AE1687AE19846A6A00F8C2F5 /* MiniBike1.png in Resources */,
 				C9DE7C6C1984330E00DABCDE /* Collect.png in Resources */,
 				AE1687AC19846A6A00F8C2F5 /* MiniBike3.png in Resources */,
@@ -567,6 +590,7 @@
 				AECF9379198446B200A1B12D /* ios_sample_icon@2x.png in Resources */,
 				AECF9377198446A700A1B12D /* ios_sample_icon.png in Resources */,
 				C9E7F184198424CE008F1E6F /* CancelBtn.png in Resources */,
+				C93A5247198478F9008CB124 /* Pikachu_Owner.png in Resources */,
 				2D48B18716EE8F0800C83CD2 /* check@2x.png in Resources */,
 				C9E7F182198424C7008F1E6F /* CancelBtn@2x.png in Resources */,
 			);
