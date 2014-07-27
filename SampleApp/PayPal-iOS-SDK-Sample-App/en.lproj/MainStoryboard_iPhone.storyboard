@@ -236,10 +236,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u6B-iJ-Y4E">
-                                <rect key="frame" x="61" y="394" width="206" height="24"/>
+                                <rect key="frame" x="61" y="394" width="204" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="THUR 30 JUL, 2:50PM">
+                                    <fragment content="TUES 29 JUL, 2:50PM">
                                         <attributes>
                                             <color key="NSColor" red="0.85490196080000003" green="0.10980392160000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
@@ -272,53 +272,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPr-tL-vMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1288" y="-508"/>
-        </scene>
-        <!--View Controller - Unlock Bike-->
-        <scene sceneID="pFJ-In-TGl">
-            <objects>
-                <viewController id="r8h-dY-iG5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pNo-QI-o9H">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fQv-q6-b7n">
-                                <rect key="frame" x="66" y="375" width="189" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="TO UNLOCK BIKE">
-                                        <attributes>
-                                            <color key="NSColor" red="0.85490196080000003" green="0.10980392160000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
-                                            <font key="NSOriginalFont" size="18" name="HelveticaNeue-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" id="yWc-VP-fyf">
-                                <rect key="frame" x="40" y="407" width="240" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Enter the following code into the combination lock:">
-                                        <attributes>
-                                            <color key="NSColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Unlock Bike" id="kLX-3J-Khg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4AH-KM-08I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1798" y="-520"/>
         </scene>
         <!--Riding Mode View Controller - Wild Bikes-->
         <scene sceneID="rSC-dE-t1S">
