@@ -8,5 +8,6 @@
 
 
 @interface MainViewController : UIViewController
+- (IBAction)logOut:(id)sender;
 
 @end

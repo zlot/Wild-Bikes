@@ -27,10 +27,42 @@
 - (IBAction)logOut:(id)sender {
     //    bool didUnlink = [PFFacebookUtils unlinkUser:[PFUser currentUser]];
     //    NSLog(didUnlink ? @"Did unlink from fb" : @"Did not unlink from fb");
-    //    [self reauthenticateUser];
+    [self authenticateUser];
     [PFUser logOut];
-        
 }
+
+- (void)authenticateUser {
+    PFUser *currentUser = [PFUser currentUser];
+    
+    if (currentUser.username != nil) {
+        // can use this session token to get info out of core database?
+        NSLog(@"currentUser.sessionToken: %@",currentUser.sessionToken);
+        
+    } else {
+        [PFFacebookUtils logInWithPermissions:@[@"publish_actions"] block:^(PFUser *user, NSError *error) {
+            // link existing PFUser to Facebook account.
+            //on successful login, the existing PFUser is updated with the Facebook information. Future logins via Facebook will now log in the user to their existing account.
+            if (![PFFacebookUtils isLinkedWithUser:user]) {
+                [PFFacebookUtils linkUser:user permissions:nil block:^(BOOL succeeded, NSError *error) {
+                    if (succeeded) {
+                        NSLog(@"Woohoo, user logged in with Facebook!");
+                    }
+                }];
+            }
+            
+            if (!user) {
+                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+            } else if (user.isNew) {
+                NSLog(@"User signed up and logged in through Facebook!");
+            } else {
+                // succeeded!
+                NSLog(@"User logged in through Facebook!");
+                NSLog(@"currentUser.sessionToken: %@",currentUser.sessionToken);
+            }
+        }];
+    }
+}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
@@ -173,6 +205,7 @@
     [bicycle save];
     
 }
+
 
 
 @end
