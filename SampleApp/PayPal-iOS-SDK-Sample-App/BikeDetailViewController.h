@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 #import <CoreLocation/CoreLocation.h>
 
 #import "Bicycle.h"
 
-@interface BikeDetailViewController : UIViewController <CLLocationManagerDelegate> {
+@interface BikeDetailViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate> {
     CLLocationManager *locationManager;
+    NSMutableArray *bikes;
+
 }
 
 @property (nonatomic, retain) Bicycle *bike;
@@ -28,12 +31,14 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *helmetImage;
 
-@property (weak, nonatomic) IBOutlet UITextView *releasedText;
+@property (weak, nonatomic) IBOutlet UILabel *releasedText;
 
 @property (weak, nonatomic) IBOutlet UITextView *farText;
 
 @property (weak, nonatomic) IBOutlet UIButton *nearButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *bikeOwnerImage;
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

@@ -13,14 +13,13 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dyi-nX-HLh">
-                                <rect key="frame" x="116" y="416" width="88" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dyi-nX-HLh">
+                                <rect key="frame" x="-25" y="-68" width="474" height="572"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="To Map View">
+                                <state key="normal" title="To Map View" image="SplashPageC.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="logOut:" destination="2" eventType="touchUpInside" id="yaF-D1-fei"/>
                                     <segue destination="kkP-Gm-vfq" kind="push" id="qck-tz-G7O"/>
                                 </connections>
                             </button>
@@ -63,37 +62,48 @@
         <scene sceneID="RH8-27-ayA">
             <objects>
                 <viewController id="En1-zr-IGs" userLabel="Bike Detail View Controller" customClass="BikeDetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vxb-mq-NiS">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="se8-6X-t0f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BikePhoto.png" id="Lml-SI-0Fd" userLabel="Image View - bike">
-                                <rect key="frame" x="0.0" y="64" width="320" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sRQ-1n-Rh5" userLabel="Button - RIDE THIS BIKE">
-                                <rect key="frame" x="49" y="211" width="223" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="RideThisBikeBtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Qgq-nh-dmJ" kind="push" identifier="BikeToRiding" id="goC-l7-oev"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" id="QvL-kx-GLf">
-                                <rect key="frame" x="0.0" y="278" width="320" height="193"/>
+                                <rect key="frame" x="-1" y="174" width="320" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" id="T4x-Sa-ECm">
+                                        <rect key="frame" x="0.0" y="202" width="320" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vwY-pY-Ob7">
+                                                <rect key="frame" x="20" y="77" width="274" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Label">
+                                                        <attributes>
+                                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0ti-ZH-nc1">
+                                                <rect key="frame" x="133" y="13" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bikeName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fou-hx-bH7">
-                                        <rect key="frame" x="67" y="20" width="187" height="21"/>
+                                        <rect key="frame" x="67" y="61" width="187" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.85490196078431369" green="0.10980392156862745" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" id="8bA-qR-UWe" userLabel="Text View - Desc">
-                                        <rect key="frame" x="35" y="38" width="251" height="83"/>
+                                        <rect key="frame" x="35" y="79" width="251" height="83"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
@@ -102,36 +112,52 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fCy-aP-UaG">
-                                        <rect key="frame" x="91" y="120" width="139" height="35"/>
+                                        <rect key="frame" x="91" y="159" width="139" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13725490196078433" green="0.12156862745098039" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.96339006439999997" blue="0.90902316289999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0ti-ZH-nc1">
-                                <rect key="frame" x="133" y="450" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BikePhoto.png" id="Lml-SI-0Fd" userLabel="Image View - bike">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="You are 200 metres away! Come closer to ride." textAlignment="center" selectable="NO" id="m4t-hN-OUG" userLabel="Text View - Desc">
-                                <rect key="frame" x="35" y="134" width="251" height="75"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" id="m4t-hN-OUG" userLabel="Text View - Desc">
+                                <rect key="frame" x="35" y="13" width="251" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="0.72097911005434789" green="0.72097911005434789" blue="0.72097911005434789" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You are 200 metres away! Come closer to ride.">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum" textAlignment="center" selectable="NO" id="x9o-cM-3XF" userLabel="Text View - Desc">
-                                <rect key="frame" x="35" y="513" width="251" height="83"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sRQ-1n-Rh5" userLabel="Button - RIDE THIS BIKE">
+                                <rect key="frame" x="49" y="130" width="223" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.49946925949999998" green="0.49946925949999998" blue="0.49946925949999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <state key="normal" image="RideThisBikeBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qgq-nh-dmJ" kind="push" identifier="BikeToRiding" id="goC-l7-oev"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="rdd-CK-ynM">
+                                <rect key="frame" x="-1" y="545" width="320" height="373"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JourneyHistory.png" id="DoN-EW-ddU">
+                                <rect key="frame" x="-1" y="495" width="321" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                    </scrollView>
                     <navigationItem key="navigationItem" title="Wild Bike Profile" id="Enr-wW-eD8"/>
                     <connections>
                         <outlet property="bikeDescription" destination="8bA-qR-UWe" id="vbQ-rJ-oBO"/>
@@ -140,14 +166,19 @@
                         <outlet property="bikeOwnerImage" destination="0ti-ZH-nc1" id="Qjz-vy-zXp"/>
                         <outlet property="farText" destination="m4t-hN-OUG" id="6ue-0u-BVC"/>
                         <outlet property="helmetImage" destination="fCy-aP-UaG" id="h4T-oB-So4"/>
+                        <outlet property="mapView" destination="rdd-CK-ynM" id="dbZ-9r-EoH"/>
                         <outlet property="nearButton" destination="sRQ-1n-Rh5" id="kus-fE-p8H"/>
-                        <outlet property="releasedText" destination="x9o-cM-3XF" id="whT-Ju-ZOT"/>
+                        <outlet property="releasedText" destination="vwY-pY-Ob7" id="vEc-y2-Hbv"/>
                         <outlet property="uiNavigationItem" destination="Enr-wW-eD8" id="rKD-e7-wSj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yda-33-Ykv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="j63-2t-WPU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </scrollView>
             </objects>
-            <point key="canvasLocation" x="769" y="182"/>
+            <point key="canvasLocation" x="769" y="196"/>
         </scene>
         <!--Deposit View Controller-->
         <scene sceneID="q5p-fR-gbJ">
@@ -653,12 +684,14 @@
         <image name="Donate15.png" width="282" height="53"/>
         <image name="DonateSmallBtn.png" width="133" height="54"/>
         <image name="ImDoneRiding.png" width="282" height="53"/>
+        <image name="JourneyHistory.png" width="321" height="52"/>
         <image name="LightRectangleLarge.png" width="237" height="100"/>
         <image name="LightRectangleSmall.png" width="237" height="75"/>
         <image name="Lock.png" width="93" height="114"/>
         <image name="OkTakeTheMoneyBtn.png" width="282" height="53"/>
         <image name="PixelBike.png" width="207" height="139"/>
         <image name="RideThisBikeBtn.png" width="223" height="59"/>
+        <image name="SplashPageC.png" width="320" height="568"/>
         <image name="check.png" width="84" height="75"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

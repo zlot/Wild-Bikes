@@ -47,6 +47,8 @@
 		AECF9379198446B200A1B12D /* ios_sample_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF9378198446B200A1B12D /* ios_sample_icon@2x.png */; };
 		AECF937C1984495800A1B12D /* BikeMini-13.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF937A1984495800A1B12D /* BikeMini-13.png */; };
 		AECF937D1984495800A1B12D /* BikeMini-12.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF937B1984495800A1B12D /* BikeMini-12.png */; };
+		C91D37D719849AFE006EB28C /* SplashPageC.png in Resources */ = {isa = PBXBuildFile; fileRef = C91D37D519849AFE006EB28C /* SplashPageC.png */; };
+		C91D37D819849AFE006EB28C /* SplashPageC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91D37D619849AFE006EB28C /* SplashPageC@2x.png */; };
 		C928124A19843EB700BA09F6 /* BackToHomeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C928124919843EB700BA09F6 /* BackToHomeBtn.png */; };
 		C928124C19843EBF00BA09F6 /* BackToHomeBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C928124B19843EBF00BA09F6 /* BackToHomeBtn@2x.png */; };
 		C92E2DD519840686007CB709 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD62851983E0EC0028B08C /* MapKit.framework */; };
@@ -78,6 +80,12 @@
 		C93A524C19847907008CB124 /* Sally_Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A524A19847907008CB124 /* Sally_Owner@2x.png */; };
 		C93A524F19847915008CB124 /* Dragon_Owner.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A524D19847915008CB124 /* Dragon_Owner.png */; };
 		C93A525019847915008CB124 /* Dragon_Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A524E19847915008CB124 /* Dragon_Owner@2x.png */; };
+		C93A5253198485C5008CB124 /* BikeLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A5251198485C5008CB124 /* BikeLocation.png */; };
+		C93A5254198485C5008CB124 /* BikeLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A5252198485C5008CB124 /* BikeLocation@2x.png */; };
+		C93A525719848817008CB124 /* JourneyHistory.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A525519848817008CB124 /* JourneyHistory.png */; };
+		C93A525819848817008CB124 /* JourneyHistory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A525619848817008CB124 /* JourneyHistory@2x.png */; };
+		C93A525B198488E7008CB124 /* Speedster_Owner.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A5259198488E7008CB124 /* Speedster_Owner.png */; };
+		C93A525C198488E7008CB124 /* Speeder_Owner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93A525A198488E7008CB124 /* Speeder_Owner@2x.png */; };
 		C98D299A1983D59000F24042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D29991983D59000F24042 /* CFNetwork.framework */; };
 		C98D299C1983D5AB00F24042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299B1983D5AB00F24042 /* libz.dylib */; };
 		C98D299E1983D5B900F24042 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D299D1983D5B900F24042 /* StoreKit.framework */; };
@@ -162,6 +170,8 @@
 		AECF9378198446B200A1B12D /* ios_sample_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios_sample_icon@2x.png"; sourceTree = "<group>"; };
 		AECF937A1984495800A1B12D /* BikeMini-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikeMini-13.png"; sourceTree = "<group>"; };
 		AECF937B1984495800A1B12D /* BikeMini-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikeMini-12.png"; sourceTree = "<group>"; };
+		C91D37D519849AFE006EB28C /* SplashPageC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashPageC.png; sourceTree = "<group>"; };
+		C91D37D619849AFE006EB28C /* SplashPageC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplashPageC@2x.png"; sourceTree = "<group>"; };
 		C928124919843EB700BA09F6 /* BackToHomeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackToHomeBtn.png; sourceTree = "<group>"; };
 		C928124B19843EBF00BA09F6 /* BackToHomeBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackToHomeBtn@2x.png"; sourceTree = "<group>"; };
 		C92E2DD71984080A007CB709 /* BikePhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BikePhoto.png; sourceTree = "<group>"; };
@@ -194,6 +204,12 @@
 		C93A524A19847907008CB124 /* Sally_Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sally_Owner@2x.png"; sourceTree = "<group>"; };
 		C93A524D19847915008CB124 /* Dragon_Owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dragon_Owner.png; sourceTree = "<group>"; };
 		C93A524E19847915008CB124 /* Dragon_Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dragon_Owner@2x.png"; sourceTree = "<group>"; };
+		C93A5251198485C5008CB124 /* BikeLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BikeLocation.png; sourceTree = "<group>"; };
+		C93A5252198485C5008CB124 /* BikeLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BikeLocation@2x.png"; sourceTree = "<group>"; };
+		C93A525519848817008CB124 /* JourneyHistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JourneyHistory.png; sourceTree = "<group>"; };
+		C93A525619848817008CB124 /* JourneyHistory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JourneyHistory@2x.png"; sourceTree = "<group>"; };
+		C93A5259198488E7008CB124 /* Speedster_Owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speedster_Owner.png; sourceTree = "<group>"; };
+		C93A525A198488E7008CB124 /* Speeder_Owner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Speeder_Owner@2x.png"; sourceTree = "<group>"; };
 		C98D29991983D59000F24042 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C98D299B1983D5AB00F24042 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C98D299D1983D5B900F24042 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -396,6 +412,12 @@
 		C92E2DD6198407FF007CB709 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C91D37D519849AFE006EB28C /* SplashPageC.png */,
+				C91D37D619849AFE006EB28C /* SplashPageC@2x.png */,
+				C93A525519848817008CB124 /* JourneyHistory.png */,
+				C93A525619848817008CB124 /* JourneyHistory@2x.png */,
+				C93A5251198485C5008CB124 /* BikeLocation.png */,
+				C93A5252198485C5008CB124 /* BikeLocation@2x.png */,
 				C93A5241198470D1008CB124 /* ImDoneRiding.png */,
 				C93A5242198470D1008CB124 /* ImDoneRiding@2x.png */,
 				C93A522D19846F98008CB124 /* DonateSmallBtn.png */,
@@ -441,6 +463,8 @@
 		C9F1C598198453FB00DA2F4A /* bikeImages */ = {
 			isa = PBXGroup;
 			children = (
+				C93A5259198488E7008CB124 /* Speedster_Owner.png */,
+				C93A525A198488E7008CB124 /* Speeder_Owner@2x.png */,
 				C93A524D19847915008CB124 /* Dragon_Owner.png */,
 				C93A524E19847915008CB124 /* Dragon_Owner@2x.png */,
 				C93A524919847907008CB124 /* Sally_Owner.png */,
@@ -527,6 +551,8 @@
 			files = (
 				C9F1C59B1984544900DA2F4A /* Black Rider.png in Resources */,
 				C92E2DE119840BE9007CB709 /* Helmet@2x.png in Resources */,
+				C91D37D819849AFE006EB28C /* SplashPageC@2x.png in Resources */,
+				C93A525719848817008CB124 /* JourneyHistory.png in Resources */,
 				AECF93721984331300A1B12D /* BikeMini-11.png in Resources */,
 				C9DE7C6D1984330E00DABCDE /* Collect@2x.png in Resources */,
 				C92E2DE419840D20007CB709 /* Helmet.png in Resources */,
@@ -560,12 +586,14 @@
 				C93A523B19846FFD008CB124 /* Sally@2x.png in Resources */,
 				AECF937C1984495800A1B12D /* BikeMini-13.png in Resources */,
 				C9F1C59E198458AE00DA2F4A /* OkTakeTheMoneyBtn.png in Resources */,
+				C93A5253198485C5008CB124 /* BikeLocation.png in Resources */,
 				C93A5248198478F9008CB124 /* Pikachu_Owner@2x.png in Resources */,
 				C9DE7C711984345200DABCDE /* Donate15@2x.png in Resources */,
 				C9F1C5A319845A7200DA2F4A /* Lock.png in Resources */,
 				AE1687AF19846A6A00F8C2F5 /* MiniBike3@2x.png in Resources */,
 				C928124C19843EBF00BA09F6 /* BackToHomeBtn@2x.png in Resources */,
 				C93A5244198470D1008CB124 /* ImDoneRiding@2x.png in Resources */,
+				C93A525B198488E7008CB124 /* Speedster_Owner.png in Resources */,
 				C9E7F180198423F8008F1E6F /* PixelBike@2x.png in Resources */,
 				C928124A19843EB700BA09F6 /* BackToHomeBtn.png in Resources */,
 				C92E2DDC1984080A007CB709 /* BikePhoto@2x.png in Resources */,
@@ -573,6 +601,7 @@
 				849BE74E16D443EC00E03EEC /* button_secondary_selected.png in Resources */,
 				C93A523E19846FFD008CB124 /* Pikachu.png in Resources */,
 				C9F1C5A719845C6800DA2F4A /* Black Rider_Owner.png in Resources */,
+				C93A525C198488E7008CB124 /* Speeder_Owner@2x.png in Resources */,
 				C93A523C19846FFD008CB124 /* Sally.png in Resources */,
 				849BE74F16D443EC00E03EEC /* button_secondary_selected@2x.png in Resources */,
 				849BE75016D443EC00E03EEC /* button_secondary.png in Resources */,
@@ -580,6 +609,7 @@
 				849BE75116D443EC00E03EEC /* button_secondary@2x.png in Resources */,
 				C9F1C5A819845C6800DA2F4A /* Black Rider__Owner@2x.png in Resources */,
 				C92E2DDB1984080A007CB709 /* BikePhoto.png in Resources */,
+				C91D37D719849AFE006EB28C /* SplashPageC.png in Resources */,
 				2D48B18616EE8F0800C83CD2 /* check.png in Resources */,
 				AE1687B119846A6A00F8C2F5 /* MiniBike1@2x.png in Resources */,
 				C93A524B19847907008CB124 /* Sally_Owner.png in Resources */,
@@ -587,9 +617,11 @@
 				C9DE7C6C1984330E00DABCDE /* Collect.png in Resources */,
 				AE1687AC19846A6A00F8C2F5 /* MiniBike3.png in Resources */,
 				AECF937D1984495800A1B12D /* BikeMini-12.png in Resources */,
+				C93A525819848817008CB124 /* JourneyHistory@2x.png in Resources */,
 				AECF9379198446B200A1B12D /* ios_sample_icon@2x.png in Resources */,
 				AECF9377198446A700A1B12D /* ios_sample_icon.png in Resources */,
 				C9E7F184198424CE008F1E6F /* CancelBtn.png in Resources */,
+				C93A5254198485C5008CB124 /* BikeLocation@2x.png in Resources */,
 				C93A5247198478F9008CB124 /* Pikachu_Owner.png in Resources */,
 				2D48B18716EE8F0800C83CD2 /* check@2x.png in Resources */,
 				C9E7F182198424C7008F1E6F /* CancelBtn@2x.png in Resources */,
